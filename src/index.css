@@ -1,0 +1,43 @@
+/**  HEADER  **/
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(194 247 114);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.barra .navegacion {
+  display: flex;
+  gap: 30px;
+}
+
+.barra .navegacion a {
+  color: white;
+  text-decoration: none;
+  font-family: Dosis, sans-serif;
+  font-size: 30px;
+}
+
+.navegacion a:hover {
+  color: lightblue;
+}
+
+/**  SECTION-1  **/
+.section-1 {
+  width: 100%;
+  height: 745px;
+  background-color: lightgrey;
+}
