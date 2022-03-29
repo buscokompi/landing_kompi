@@ -1,0 +1,40 @@
+#starting-point {
+  top: 0;
+  position: absolute;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: brown;
+  width: 100%;
+}
+
+.space-menu {
+  width: 50%;
+}
+
+.anchors {
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.anchor {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:hover,
+.anchor:hover {
+  filter: brightness(90%);
+  text-decoration: underline;
+}
+
+#prueba {
+  margin-top: 1000px;
+}
