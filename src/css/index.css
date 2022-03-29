@@ -6,6 +6,7 @@
 .menu {
   display: flex;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   padding: 10px;
@@ -37,4 +38,14 @@
 
 #prueba {
   margin-top: 1000px;
+}
+
+.video {
+  position: relative;
+  z-index: 0;
+}
+
+.puppies {
+  overflow: hidden;
+  z-index: -5;
 }
