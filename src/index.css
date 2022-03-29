@@ -1,22 +1,30 @@
 /**  HEADER  **/
 
-body {
+body,
+h1 {
   margin: 0;
+}
+
+.fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header {
   background-color: rgb(194 247 114);
-  position: fixed;
   width: 100%;
+
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 .barra {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 0 70px;
 }
 
 .barra .navegacion {
@@ -38,6 +46,19 @@ body {
 /**  SECTION-1  **/
 .section-1 {
   width: 100%;
-  height: 745px;
-  background-color: lightgrey;
+  height: 600px;
+  background-image: url("img/pexels-helena-lopes-2027105.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-2 {
+  width: 100%;
+  height: 1000px;
+  background-color: lightcoral;
+}
+
+.contenedor {
+  width: auto;
+  height: auto;
 }
