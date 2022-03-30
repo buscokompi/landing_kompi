@@ -68,10 +68,13 @@ p {
 }
 
 .contenedor h1 {
+  font-family: Dosis;
   font-size: 48px;
 }
 
 .contenedor p {
+  font-family: dosis;
+  font-weight: 400;
   font-size: 20px;
 }
 
