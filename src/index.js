@@ -8,13 +8,16 @@ function iniciarApp() {
 
 function navegacionFija() {
   const header = document.querySelector(".header");
+  const section = document.querySelector(".section-1");
   const aux = document.querySelector(".section-1");
 
   window.addEventListener("scroll", function() {
-    if (aux.getBoundingClientRect().bottom < 0) {
+    if (aux.getBoundingClientRect().top < 0) {
       header.classList.add("fijo");
+      section.classList.add("padding");
     } else {
       header.classList.remove("fijo");
+      section.classList.remove("padding");
     }
   });
 }
