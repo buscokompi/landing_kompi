@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #starting-point {
   top: 0;
   position: absolute;
@@ -43,29 +47,26 @@
 .presentation {
   position: relative;
   display: inline-block;
-  text-align: center;
+}
+
+.texts {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
 }
 
 .title {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  color: white;
-  transform: translate(-40%, -50%);
 }
 
 .subtitle {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, -50%);
 }
 
 .puppies {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 100%;
+  width: auto;
   z-index: -5;
-  margin: 0;
 }
