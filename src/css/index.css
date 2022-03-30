@@ -1,72 +1,101 @@
-body {
+body,
+h1 {
   margin: 0;
 }
 
-#starting-point {
-  top: 0;
-  position: absolute;
-}
-
-.menu {
-  display: flex;
+.fijo {
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  padding: 10px;
-  background-color: brown;
+}
+
+.padding {
+  margin-top: 110px;
+}
+
+/**  HEADER  **/
+.header {
+  background-color: rgb(194 247 114);
   width: 100%;
 }
 
-.space-menu {
-  width: 50%;
-}
-
-.anchors {
-  width: 50%;
-  display: inline-flex;
-  justify-content: space-around;
+.barra {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 70px;
 }
 
-.anchor {
+.barra .navegacion {
+  display: flex;
+  gap: 30px;
+}
+
+.barra .navegacion a {
   color: white;
   text-decoration: none;
+  font-family: Dosis, sans-serif;
+  font-size: 30px;
 }
 
-.logo-link:hover,
-.anchor:hover {
-  filter: brightness(90%);
-  text-decoration: underline;
+.navegacion a:hover {
+  color: lightblue;
 }
 
-#prueba {
-  margin-top: 1000px;
-}
-
-.presentation {
-  position: relative;
-  display: inline-block;
-}
-
-.texts {
-  display: block;
+/**  SECTION-1  **/
+.section-1 {
   width: 100%;
+  height: 650px;
+  background-image: url("img/pexels-helena-lopes-2027105.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  z-index: 1;
+  align-items: center;
+  text-align: center;
+  padding: 200px;
 }
 
-.title {
-  position: absolute;
+.contenedor h1,
+p {
+  color: white;
 }
 
-.subtitle {
-  position: absolute;
+.contenedor h1 {
+  /* font-family: Dosis; */
+  font-size: 48px;
 }
 
-.puppies {
-  height: 100%;
-  width: auto;
-  z-index: -5;
+.contenedor p {
+  /* font-family: Dosis; */
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.enlace {
+  padding-top: 100px;
+}
+
+/* .enlace a {
+  padding: 20px;
+  border-radius: 5%;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(240 201 128);
+} */
+
+.enlace a:hover {
+  background-color: rgb(221 183 113);
+}
+
+/**  SECTION-2  **/
+.section-2 {
+  width: 100%;
+  height: 1000px;
+  background-color: lightcoral;
 }
