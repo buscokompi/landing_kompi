@@ -19,6 +19,15 @@ h1 {
   width: 100%;
 }
 
+.enlace a {
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(240 201 128);
+}
+
 .barra {
   display: flex;
   justify-content: space-between;
@@ -46,9 +55,10 @@ h1 {
 .section-1 {
   width: 100%;
   height: 650px;
-  background-image: url("img/pexels-helena-lopes-2027105.jpg");
+  background-image: url("https://images.pexels.com/photos/3523317/pexels-photo-3523317.jpeg?cs=srgb&dl=pexels-alotrobo-3523317.jpg&fm=jpg");
   background-size: cover;
   background-position: center;
+  background-color: #000a;
 }
 
 .contenedor {
@@ -66,12 +76,12 @@ p {
 }
 
 .contenedor h1 {
-  /* font-family: Dosis; */
+  font-family: Dosis, sans-serif;
   font-size: 48px;
 }
 
 .contenedor p {
-  /* font-family: Dosis; */
+  font-family: Dosis, sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
@@ -80,17 +90,12 @@ p {
   padding-top: 100px;
 }
 
-/* .enlace a {
-  padding: 20px;
-  border-radius: 5%;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  background-color: rgb(240 201 128);
-} */
-
 .enlace a:hover {
   background-color: rgb(221 183 113);
+}
+
+.kompi-logo:hover {
+  filter: brightness(90%);
 }
 
 /**  SECTION-2  **/
