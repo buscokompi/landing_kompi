@@ -1,103 +1,122 @@
+/**  VARIABLES **/
+
+:root {
+  /** Colors **/
+  --orange: #f9b225;
+  --lightorange: #ffe194;
+  --white: #fff;
+  --blue: #325b72;
+  --grey: #3f3d3b;
+  --black: #000;
+  --desktop: 748px;
+
+  /** Title Fonts **/
+  --title-font: "Dosis";
+  --alter-title-font: "Poppins";
+
+  /** Subtitle Fonts **/
+  --subtitle-font: "Poppins";
+  --alter-subtitle-font: "Dosis";
+
+  /** Body Fonts **/
+  --body-font: "Open Sans";
+  --alter-body-font: "Lato";
+}
+
+.padding {
+  padding-top: calc(1 / 6 * var(--desktop));
+}
+
 /**  GLOBALES  **/
 
 body,
 h1 {
-  margin: 0;
+  margin: 0;  /* Delete default margin in body and H1 tags */
+}
+
+.header {
+  width: 100%;
+  height: var(--desktop);
+  background-image: url("img/Portadas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  height: calc(1 / 6 * var(--desktop));
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fijo {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #f9b225;
 }
 
-.padding {
-  margin-top: 110px;
+.menu img,
+nav {
+  padding: 0 40px;
 }
 
-/**  HEADER  **/
-.header {
-  background-color: rgb(194 247 114);
-  width: 100%;
-}
-
-.barra {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 70px;
-}
-
-.barra .navegacion {
-  display: flex;
-  gap: 30px;
-}
-
-.barra .navegacion a {
-  color: white;
+.navigation a {
   text-decoration: none;
-  font-family: Dosis, sans-serif;
-  font-size: 30px;
-}
-
-.navegacion a:hover {
-  color: lightblue;
-}
-
-/**  SECTION-1  **/
-.section-1 {
-  width: 100%;
-  height: 650px;
-  background-image: url("img/pexels-helena-lopes-2027105.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 200px;
-}
-
-.contenedor h1,
-p {
-  color: white;
-}
-
-.contenedor h1 {
-  font-family: Dosis;
-  font-size: 48px;
-}
-
-.contenedor p {
-  font-family: dosis;
-  font-weight: 400;
+  color: var(--white);
+  font-family: var(--body-font);
   font-size: 20px;
+  font-weight: bold;
+  padding-right: 40px;
 }
 
-.enlace {
-  padding-top: 100px;
+.navigation a:last-child {
+  padding-right: 0;
 }
 
-.enlace a {
-  padding: 20px;
-  border-radius: 5%;
+.title {
+  width: 690px;
+  height: 160px;
+  text-align: center;
+  color: var(--white);
+  background-color: transparent;
+  margin-top: 150px;
+}
+
+.title h1 {
+  font-family: var(--title-font);
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.title p {
+  font-family: var(--subtitle-font);
+  font-size: 28px;
+  font-weight: medium;
+  margin-top: 10px;
+}
+
+.header-link {
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 25px;
-  color: white;
-  background-color: rgb(240 201 128);
+  color: var(--white);
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--orange);
+  border-radius: 30px;
+  padding: 10px 90px;
+  margin-top: 50px;
 }
 
-.enlace a:hover {
-  background-color: rgb(221 183 113);
-}
-
-/**  SECTION-2  **/
-.section-2 {
+.section {
   width: 100%;
   height: 1000px;
-  background-color: lightcoral;
+  background-color: var(--blue);
 }

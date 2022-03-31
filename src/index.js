@@ -7,16 +7,17 @@ function iniciarApp() {
 }
 
 function navegacionFija() {
-  const header = document.querySelector(".header");
-  const section = document.querySelector(".section-1");
-  const aux = document.querySelector(".section-1");
+  const menu = document.querySelector(".menu");
+  const section = document.querySelector(".title");
+  // const div = document.createElement();
+  const aux = document.querySelector(".title");
 
   window.addEventListener("scroll", function() {
     if (aux.getBoundingClientRect().top < 0) {
-      header.classList.add("fijo");
+      menu.classList.add("fijo");
       section.classList.add("padding");
     } else {
-      header.classList.remove("fijo");
+      menu.classList.remove("fijo");
       section.classList.remove("padding");
     }
   });
