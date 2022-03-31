@@ -1,3 +1,15 @@
+:root {
+  --primary-color: #f9b225;
+  --secondary-color: #ffe194;
+  --terciary-color: #325b72;
+  --brown-color: #3f3d3b;
+  --white-color: #fff;
+  --black-color: #000;
+  --title-font: "Dosis", sans-serif;
+  --subtitle-font: "Poppins", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+}
+
 body,
 h1 {
   margin: 0;
@@ -15,40 +27,45 @@ h1 {
 
 /**  HEADER  **/
 .header {
-  background-color: rgb(194 247 114);
+  /* background-color: var(--primary-color); */
   width: 100%;
 }
 
 .enlace a {
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 35px;
   text-decoration: none;
   font-size: 25px;
   color: white;
-  background-color: rgb(240 201 128);
+  background-color: var(--primary-color);
 }
 
 .barra {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
+  padding: 15px 70px;
+}
+
+.backbar {
+  background-color: var(--primary-color);
 }
 
 .barra .navegacion {
   display: flex;
-  gap: 30px;
+  gap: 32px;
 }
 
 .barra .navegacion a {
   color: white;
   text-decoration: none;
-  font-family: Dosis, sans-serif;
+  font-family: var(--title-font);
   font-size: 30px;
 }
 
 .navegacion a:hover {
-  color: lightblue;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 /**  SECTION-1  **/
@@ -72,16 +89,16 @@ h1 {
 
 .contenedor h1,
 p {
-  color: white;
+  color: var(--white-color);
 }
 
 .contenedor h1 {
-  font-family: Dosis, sans-serif;
+  font-family: var(--title-font);
   font-size: 48px;
 }
 
 .contenedor p {
-  font-family: Dosis, sans-serif;
+  font-family: var(--subtitle-font);
   font-weight: 400;
   font-size: 20px;
 }
@@ -94,13 +111,45 @@ p {
   background-color: rgb(221 183 113);
 }
 
-.kompi-logo:hover {
-  filter: brightness(90%);
-}
-
 /**  SECTION-2  **/
 .section-2 {
-  width: 100%;
-  height: 1000px;
-  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-2 .huella-img {
+  margin-top: 100px;
+}
+
+.section-2 .text-slogan h1 {
+  margin-top: 60px;
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  font-size: 45px;
+}
+
+.section-2 .text-slogan h3 {
+  font-family: var(--subtitle-font);
+  font-size: 25px;
+}
+
+.section-2 .vendermoto {
+  display: flex;
+  margin: 100px;
+}
+
+.vendermoto div {
+  margin: 70px;
+}
+
+.moto h2 {
+  font-family: var(--subtitle-font);
+}
+
+.moto p {
+  font-family: var(--text-font);
+  color: #000;
 }
