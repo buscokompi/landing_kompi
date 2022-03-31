@@ -15,24 +15,31 @@ h1 {
   margin: 0;
 }
 
+.img {
+  background-image: url("https://images.pexels.com/photos/3523317/pexels-photo-3523317.jpeg?cs=srgb&dl=pexels-alotrobo-3523317.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .fijo {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: rgb(0 0 0 / 0%);
 }
 
 .padding {
-  margin-top: 110px;
+  padding-top: 110px;
 }
 
 /**  HEADER  **/
 .header {
-  /* background-color: var(--primary-color); */
   width: 100%;
 }
 
-.enlace a {
-  padding: 20px;
+.button {
+  font-family: var(--title-font);
+  padding: 20px 80px;
   border-radius: 35px;
   text-decoration: none;
   font-size: 25px;
@@ -72,10 +79,8 @@ h1 {
 .section-1 {
   width: 100%;
   height: 650px;
-  background-image: url("https://images.pexels.com/photos/3523317/pexels-photo-3523317.jpeg?cs=srgb&dl=pexels-alotrobo-3523317.jpg&fm=jpg");
   background-size: cover;
   background-position: center;
-  background-color: #000a;
 }
 
 .contenedor {
@@ -120,36 +125,36 @@ p {
   text-align: center;
 }
 
-.section-2 .huella-img {
+.huella-img {
   margin-top: 100px;
 }
 
-.section-2 .text-slogan h1 {
+.text-slogan h1 {
   margin-top: 60px;
   font-family: var(--title-font);
   color: var(--primary-color);
   font-size: 45px;
 }
 
-.section-2 .text-slogan h3 {
+.text-slogan h3 {
   font-family: var(--subtitle-font);
   font-size: 25px;
 }
 
-.section-2 .vendermoto {
+.services {
   display: flex;
   margin: 100px;
 }
 
-.vendermoto div {
+.services div {
   margin: 70px;
 }
 
-.moto h2 {
+.service h2 {
   font-family: var(--subtitle-font);
 }
 
-.moto p {
+.service p {
   font-family: var(--text-font);
   color: #000;
 }
