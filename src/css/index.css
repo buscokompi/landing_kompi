@@ -15,8 +15,8 @@ h1 {
   margin: 0;
 }
 
-.img {
-  background-image: url("https://images.pexels.com/photos/3523317/pexels-photo-3523317.jpeg?cs=srgb&dl=pexels-alotrobo-3523317.jpg&fm=jpg");
+.header {
+  background-image: url("../assets/images/imgDogs2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 /**  HEADER  **/
-.header {
+.section-0 {
   width: 100%;
 }
 
@@ -47,7 +47,7 @@ h1 {
   background-color: var(--primary-color);
 }
 
-.barra {
+.topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,19 +58,19 @@ h1 {
   background-color: var(--primary-color);
 }
 
-.barra .navegacion {
+.topbar .navegation {
   display: flex;
   gap: 32px;
 }
 
-.barra .navegacion a {
+.topbar .navegation a {
   color: white;
   text-decoration: none;
   font-family: var(--title-font);
   font-size: 30px;
 }
 
-.navegacion a:hover {
+.navegation a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
 }
@@ -83,7 +83,7 @@ h1 {
   background-position: center;
 }
 
-.contenedor {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,27 +92,27 @@ h1 {
   padding: 200px;
 }
 
-.contenedor h1,
+.container h1,
 p {
   color: var(--white-color);
 }
 
-.contenedor h1 {
+.container h1 {
   font-family: var(--title-font);
   font-size: 48px;
 }
 
-.contenedor p {
+.container p {
   font-family: var(--subtitle-font);
   font-weight: 400;
   font-size: 20px;
 }
 
-.enlace {
+.link {
   padding-top: 100px;
 }
 
-.enlace a:hover {
+.link a:hover {
   background-color: rgb(221 183 113);
 }
 
@@ -125,7 +125,7 @@ p {
   text-align: center;
 }
 
-.huella-img {
+.paw-print {
   margin-top: 100px;
 }
 
