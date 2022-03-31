@@ -56,6 +56,7 @@ h1 {
 
 .backbar {
   background-color: var(--primary-color);
+  transition: 1s ease;
 }
 
 .topbar .navegation {
@@ -150,11 +151,24 @@ p {
   margin: 70px;
 }
 
+.service {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  transition: transform 0.5s;
+  padding: 50px;
+}
+
+.service:hover {
+  transform: scale(1.5);
+}
+
 .service h2 {
   font-family: var(--subtitle-font);
+  font-size: 30px;
 }
 
 .service p {
   font-family: var(--text-font);
   color: #000;
+  font-size: 20px;
 }
