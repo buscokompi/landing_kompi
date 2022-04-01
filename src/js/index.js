@@ -16,10 +16,12 @@ function navegacionFija() {
       header.classList.add("fijo");
       aux.classList.add("padding");
       header.classList.add("backbar");
+      header.classList.remove("backbar2");
     } else {
       header.classList.remove("fijo");
       aux.classList.remove("padding");
       header.classList.remove("backbar");
+      header.classList.add("backbar2");
     }
   });
 }
