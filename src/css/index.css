@@ -175,6 +175,26 @@ p {
 
 .section-3 {
   height: 500px;
+  margin-top: 100px;
+  background-color: var(--primary-color);
+}
+
+.gridimg {
+  display: grid;
+
+  /* grid-template-columns: repeat(5, 100px); */
+  justify-content: center;
+  align-content: center;
+}
+
+.containerimg {
+  width: 1000px;
+  height: 400px;
+  background-image: url("../assets/images/Galeria.png");
+  background-size: cover;
+  background-position: center;
+
+  /* border-radius: 50%; */
 }
 
 /* --- Buttons --- */
