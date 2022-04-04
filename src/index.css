@@ -89,6 +89,10 @@ nav {
   padding-right: 0;
 }
 
+.navigation a:hover {
+  color: var(--orange);
+}
+
 .title {
   width: 690px;
   height: 160px;
@@ -243,7 +247,7 @@ nav {
 
 .section-2-content {
   width: 100%;
-  height: 50%;
+  height: 35%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -252,7 +256,7 @@ nav {
   align-items: center;
   justify-items: center;
   gap: 30px;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .section-2-content picture {
@@ -301,4 +305,90 @@ nav {
 
 .picture-10 {
   background: url("img/veronika-jorjobert-27w3ULIIJfI-unsplash.jpg");
+}
+
+.section-2-button {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.section-2-button a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--body-font);
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 50px;
+  padding: 5px 50px;
+  border-radius: 17px;
+  border: 1px solid var(--white);
+}
+
+.section-3 {
+  width: 100%;
+  height: var(--desktop);
+  background-color: var(--lightorange);
+  display: flex;
+  align-items: center;
+}
+
+.section-3 div {
+  width: calc(1 / 3 * 100%);
+  height: 400px;
+  background-color: var(--white);
+  border: 1px solid black;
+  border-radius: 32px;
+}
+
+.footer {
+  width: 100%;
+  height: calc(1 / 2 * var(--desktop));
+  background-color: #000;
+}
+
+.footer-container {
+  width: calc(3 / 5 * 100%);
+  height: 100%;
+  margin: 0 calc(1 / 5 * 100%);
+
+  /* background-color: lightblue; */
+}
+
+.footer-icons {
+  width: 100%;
+  height: calc(1 / 7 * 100%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 10px;
+}
+
+.footer-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-about {
+  width: calc(1 / 3 * 100%);
+  height: calc(3 / 6 * 100%);
+  display: flexbox;
+  justify-content: flex-start;
+  color: white;
+  font-family: var(--body-font);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer-footer {
+  width: 100%;
+  height: calc(1 / 7 * 100%);
+  color: var(--white);
+  padding-top: 20px;
+  text-align: center;
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-size: 12px;
 }
