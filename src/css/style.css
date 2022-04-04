@@ -1,10 +1,10 @@
 :root {
   --primary-color: #f9b225;
   --secondary-color: #ffe194;
-  --terciary-color: #325b72;
-  --brown-color: #3f3d3b;
+  --terciary-color: #D11149;
+  --terciary2-color: #C83E4D;
   --white-color: #fff;
-  --black-color: #000;
+  --dark-color: #3F3D3B;
   --title-font: "Dosis", sans-serif;
   --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
@@ -42,6 +42,10 @@ h1 {
   width: 100%;
 }
 
+.kompi-logo{
+  width: 180px;
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -65,10 +69,12 @@ h1 {
 }
 
 .topbar .navegation a {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
-  font-family: var(--title-font);
-  font-size: 30px;
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 500;
+  
 }
 
 .navegation a:hover {
@@ -100,13 +106,15 @@ p {
 
 .container h1 {
   font-family: var(--title-font);
-  font-size: 48px;
+  font-size:72px;
+  line-height: 8px;
 }
 
 .container p {
   font-family: var(--subtitle-font);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 8px;
 }
 
 .link {
@@ -127,28 +135,30 @@ p {
 }
 
 .paw-print {
-  margin-top: 70px;
+  margin-top: 200px;
 }
 
 .text-slogan h1 {
   margin-top: 30px;
   font-family: var(--title-font);
   color: var(--primary-color);
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .text-slogan h3 {
-  font-family: var(--subtitle-font);
-  font-size: 25px;
+  font-family: var(--text-font);
+  font-size: 20px;
 }
 
 .services {
   display: flex;
   margin: 0 100px;
+  font-size: 16px;
+  font-family: var(--text-font);
 }
 
 .services div {
-  margin: 70px;
+  margin: 100px;
 }
 
 .service {
@@ -159,7 +169,7 @@ p {
 }
 
 .service:hover {
-  transform: scale(1.25);
+  transform: scale(1.20);
 }
 
 .service h2 {
@@ -170,7 +180,8 @@ p {
 .service p {
   font-family: var(--text-font);
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* SECTION 3 */
@@ -216,11 +227,11 @@ p {
 .button {
   display: inline-flex;
   position: relative;
-  padding: 20px 80px;
-  border-radius: 35px;
-  font-family: var(--title-font);
+  padding: 15px 60px;
+  border-radius: 50px;
+  font-family: var(--text-font);
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   background-color: var(--primary-color);
   transition: 0.4s ease all;
@@ -273,5 +284,5 @@ p {
   margin-top: 20px;
   font-family: var(--text-font);
   color: var(--white-color);
-  font-size: 25px;
+  font-size: 16px;
 }
