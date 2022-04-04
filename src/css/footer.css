@@ -22,15 +22,20 @@
 }
 
 .about-us {
+  height: 20px;
   display: flex;
-  width: 200px;
+  flex-direction: column;
+  width: 230px;
+  font-family: "Open Sans", sans-serif;
   color: white;
+  padding-left: 20rem;
+  font-size: 15px;
+  line-height: 35px;
 }
 
 .line {
   background-color: grey;
   width: 100rem;
-  margin-top: 5rem;
 }
 
 .copyright {
@@ -39,15 +44,14 @@
   width: 50rem;
   height: 8rem;
   margin-left: 10rem;
-  margin-top: 25rem;
+  margin-top: 28rem;
 }
 
 .copyright-words {
   display: flex;
   position: absolute;
-  font-family: Poppins, sans-serif;
-  font-weight: 1px;
+  font-family: "Open Sans", sans-serif;
   color: white;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
