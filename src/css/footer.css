@@ -1,36 +1,39 @@
 .footer {
   background-color: #3f3d3b;
-  width: 100%;
   height: 700px;
-  bottom: 0;
-  left: 0;
+  margin-top: 4rem;
 }
 
 .social-media {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20rem;
+  padding-top: 12px;
 }
 
 .img {
   display: flex;
   align-items: center;
-  width: 12rem;
-  height: 50px;
-  margin-top: 3rem;
+  width: 35rem;
+  height: 13rem;
   gap: 2rem;
 }
 
 .about-us {
-  height: 20px;
   display: flex;
+  margin-top: -7rem;
+  height: 20px;
   flex-direction: column;
-  width: 230px;
+  width: 300px;
   font-family: "Open Sans", sans-serif;
   color: white;
   padding-left: 20rem;
-  font-size: 15px;
-  line-height: 35px;
+  line-height: 25px;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.text {
+  margin-top: 40px;
 }
 
 .line {
@@ -41,7 +44,7 @@
 .copyright {
   display: flex;
   position: absolute;
-  width: 50rem;
+  width: 30rem;
   height: 8rem;
   margin-left: 10rem;
   margin-top: 28rem;
@@ -54,4 +57,5 @@
   color: white;
   flex-direction: column-reverse;
   align-items: center;
+  font-size: 12px;
 }
