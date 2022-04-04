@@ -40,6 +40,7 @@ h1 {
 /**  HEADER  **/
 .section-0 {
   width: 100%;
+
 }
 
 .kompi-logo{
@@ -51,17 +52,21 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 70px;
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
 
+/* --->Hacer que la barra de navegación sea invisible  */
 .backbar {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   transition: 1s ease;
-}
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+} 
 
 .backbar2 {
   background-color: transparent;
   transition: 1s ease;
-}
+} 
 
 .topbar .navegation {
   display: flex;
@@ -73,21 +78,25 @@ h1 {
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   
 }
 
 .navegation a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
+  color: var(--terciary-color);
+  transition: color 0.5s;
+
 }
 
 /**  SECTION-1  **/
 .section-1 {
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -96,7 +105,6 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 200px;
 }
 
 .container h1,
@@ -106,13 +114,12 @@ p {
 
 .container h1 {
   font-family: var(--title-font);
-  font-size:72px;
+  font-size:90px;
   line-height: 8px;
 }
 
 .container p {
   font-family: var(--subtitle-font);
-  font-weight: 400;
   font-size: 24px;
   line-height: 8px;
 }
@@ -135,41 +142,65 @@ p {
 }
 
 .paw-print {
-  margin-top: 200px;
+  margin-top: 150px;
+  align-self: center;
 }
 
-.text-slogan h1 {
-  margin-top: 30px;
+.paw-print img{
+  width: 50px;
+}
+
+.text-slogan h2 {
+  margin-top: 32px;
+  text-align: center;
   font-family: var(--title-font);
   color: var(--primary-color);
-  font-size: 40px;
+  font-size: 36px;
+  line-height: 8px;
 }
 
 .text-slogan h3 {
   font-family: var(--text-font);
+  color: var(--dark-color);
   font-size: 20px;
+  text-align: center;
 }
 
 .services {
   display: flex;
-  margin: 0 100px;
+  margin: 0 300px;
   font-size: 16px;
   font-family: var(--text-font);
 }
 
+
 .services div {
-  margin: 100px;
+  margin: 40px;
 }
 
 .service {
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
   transition: transform 0.5s;
   padding: 30px;
 }
 
+.img-service{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  /* overflow: hidden; */
+}
+
+
 .service:hover {
-  transform: scale(1.20);
+  transform: scale(1.05);
 }
 
 .service h2 {
@@ -180,8 +211,9 @@ p {
 .service p {
   font-family: var(--text-font);
   color: #000;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 16px;
 }
 
 /* SECTION 3 */
@@ -227,9 +259,10 @@ p {
 .button {
   display: inline-flex;
   position: relative;
-  padding: 15px 60px;
+  padding: 15px 50px;
   border-radius: 50px;
   font-family: var(--text-font);
+  font-weight: 400;
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -254,12 +287,16 @@ p {
 
 .button:hover::after {
   transform: scale(400);
-  background: var(--secondary-color);
+  background: var(--terciary-color);
 }
 
 .button span {
   position: relative;
   z-index: 2;
+}
+
+.btnsection2{
+  margin-top: 40px;
 }
 
 /* ----------------- */
