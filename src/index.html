@@ -1,14 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
-  <script type="module" src="./index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header class="header">
+
+        <div class="section-0">
+            <div class="topbar">
+                <a href="index.html">
+                    <img class="kompi-logo" src="assets/images/logo_versioncolor.png" alt="Logo">
+                </a>
+                <nav class="navegation">
+                    <a href="#anchorservices">Servicios</a>
+                    <a href="#">Nuestros kompis</a>
+                    <a href="#">Testimonios</a>
+                </nav>
+            </div>
+        </div>
+
+        <section class="section-1">
+            <div class="container">
+                <h1>¿Buscas un kompi?</h1>
+                <p>
+                    Adopta gratis y fácilmente a tu próximo peludo
+                </p>
+                <div class="link">
+                    <a class="button" href="./webprove.html"> <span>Adopta</span></a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="section-2">
+        <div id="anchorservices"></div>
+        <div class="paw-print">
+            <img src="./assets/icons/huella.png">
+        </div>
+
+        <div class="text-slogan">
+            <h2>La mejor forma de adoptar</h2>
+            <h3>Conoce más de nuestros servicios</h3>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <div class="img-service">
+                    <img class="busca-img" src="assets/icons/icono_encuentra.svg" alt="vector_encuentra_en_kompi" sizes="">                </div>
+                <h3>BUSCA</h3>
+                <p>Con Kompi es fácil encontrar al perro o gato que buscas. Simplemente pulsa el botón “Adopta” e ingresa tu código postal para comenzar la búsqueda. </p>
+            </div>
+            <div class="service">
+                <div class="img-service">
+                    <img class="busca-img" src="assets/icons/icono_encuentra.svg" alt="vector_encuentra_en_kompi" sizes="">
+                </div>
+                <h3>ENCUENTRA</h3>
+                <p>Una vez que encuentres a tu próxima mascota haz click en “Adóptame” para obtener información de contacto de su refugio, rescate u hogar actual. 
+                </p>
+            </div>
+            <div class="service">
+                <div class="img-service">
+                    <img class="busca-img" src="assets/icons/icono_adopta.svg" alt="vector_adopta_en_kompi" sizes="">
+                </div>                
+                <h3>ADOPTA</h3>
+                <p>El centro de rescate, refugio u hogar actual lo guiará a través del proceso de adopción. Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia. 
+                </p>
+            </div>
+        </div>
+
+        <div class="btnsection2">
+            <a class="button" href="./webprove.html"> <span>Adopta</span></a>
+        </div>
+
+    </section>
+
+    <section class="section-3">
+        <div class="texts">
+            <h1>Nuestros Kompis</h1>
+            <p>Nuestra familia está conformada por muchos Kompis.
+                Busca a tu compañero fiel entre las +1000 posibles
+                adopciones por toda España. </p>
+        </div>
+
+        <div class="gridimg">
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+            <div class="containerimg"></div>
+        </div>
+    </section>
+
+    <!--footer de juan-->
+    <footer>
+        <div class="footer">
+
+
+          <div class="social-media">
+            <div class="img">
+              <a href="https://www.facebook.com/profile.php?id=100079663393852"> <img src="./assets/icons/facebook.png"></a>
+              <a href="https://twitter.com/BuscoKompi"> <img src="./assets/icons/twitter.png"></a>
+              <a href="https://www.instagram.com/buscokompi/?hl=es"> <img src="./assets/icons/instagram.png"></a>
+
+            </div>
+          </div>
+          <hr class="line">
+          <div class="copytight">
+            <h4>© 2022. Todos los Derechos Reservados. Desarrollado por Karmic Koala</h4>
+          </div>
+        </div>
+
+      </footer>
+      <!--__________--->
+
+    <script src="./js/index.js"></script>
+    <script src="./js/imageblur.js"></script>
 
 </body>
 </html>
