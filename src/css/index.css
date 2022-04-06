@@ -209,6 +209,8 @@ p {
 /* SECTION 3 */
 
 .section-3 {
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
   background-color: var(--primary-color);
   padding-bottom: 70px;
@@ -240,10 +242,9 @@ p {
 .gridimg {
   display: grid;
   grid-template-columns: repeat(5, 100px);
-  justify-content: space-between;
-  align-content: center;
-  margin-left: 300px;
-  margin-right: 300px;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 0 200px;
 }
 
 .containerimg {
@@ -335,8 +336,6 @@ p {
   background-color: grey;
   width: 100rem;
 }
-
-/* ------------- */
 
 /* --- Buttons --- */
 
