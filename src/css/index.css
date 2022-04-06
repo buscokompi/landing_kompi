@@ -218,10 +218,23 @@ p {
 
 /* SECTION 3 */
 
+
 .section-3 {
-  margin-top: 100px;
-  background-color: var(--primary-color);
-  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background3{
+  background-image: url("../assets/images/fondo_Seccionprueba.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  
 }
 
 .gridimg {
