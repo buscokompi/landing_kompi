@@ -254,6 +254,99 @@ p {
   transform: scale(0.95);
 }
 
+/* SECTION 4 */
+
+/* Cards Carousel */
+.section-4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--secondary-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-reviews h2 {
+  margin-top: 32px;
+  font-family: var(--title-font);
+  color: var(--dark-color);
+  font-size: 36px;
+  padding: 30px;
+}
+
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+ /* This is the element that rotates with the animation */
+ /* Individual cards */
+}
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.icon-cards__content.step-animation {
+  animation: carousel 16s infinite steps(1) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  transform-origin: center;
+}
+.icon-cards__item:nth-child(1) {
+  /* background: #fdd94f; */
+  background: white;
+  transform: rotateY(0) translateZ(35vw);
+}
+.icon-cards__item:nth-child(2) {
+  /* background: #f87949; */
+  background: white;
+  transform: rotateY(120deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(3) {
+  /* background: #fbab48; */
+  background: white;
+  transform: rotateY(240deg) translateZ(35vw);
+}
+/* Carousel animation */
+@keyframes carousel {
+  0%, 17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+ }
+  27.5%, 45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+ }
+  55%, 72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+ }
+  82.5%, 100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+ }
+}
+
+
 /* --- Buttons --- */
 
 .button {
