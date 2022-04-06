@@ -1,6 +1,16 @@
-const image = (".containerimg");
+const imagenes = document.querySelectorAll(".containerimg");
 
-image.hover(function() {
-  image.addClass("blur");
-  // al perder el foco, retiro la clase a todos los 'item'
-});
+function hoverimages(image) {
+  for (let i = 0; i < imagenes.length; i++) {
+    imagenes[i].classList.add("blur");
+  }
+  image.classList.add("zoom");
+  image.classList.remove("blur");
+}
+
+function hoverout(image) {
+  for (let i = 0; i < imagenes.length; i++) {
+    imagenes[i].classList.remove("blur");
+    imagenes[i].classList.remove("zoom");
+  }
+}
