@@ -1,10 +1,10 @@
 :root {
   --primary-color: #f9b225;
   --secondary-color: #ffe194;
-  --terciary-color: #D11149;
-  --terciary2-color: #C83E4D;
+  --terciary-color: #d11149;
+  --terciary2-color: #c83e4d;
   --white-color: #fff;
-  --dark-color: #3F3D3B;
+  --dark-color: #3f3d3b;
   --title-font: "Dosis", sans-serif;
   --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
@@ -40,10 +40,9 @@ h1 {
 /**  HEADER  **/
 .section-0 {
   width: 100%;
-
 }
 
-.kompi-logo{
+.kompi-logo {
   width: 180px;
 }
 
@@ -61,12 +60,12 @@ h1 {
   background-color: var(--white-color);
   transition: 1s ease;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
-} 
+}
 
 .backbar2 {
   background-color: transparent;
   transition: 1s ease;
-} 
+}
 
 .topbar .navegation {
   display: flex;
@@ -79,13 +78,11 @@ h1 {
   font-family: var(--text-font);
   font-size: 20px;
   font-weight: 600;
-  
 }
 
 .navegation a:hover {
   color: var(--terciary-color);
   transition: color 0.5s;
-
 }
 
 /**  SECTION-1  **/
@@ -114,7 +111,7 @@ p {
 
 .container h1 {
   font-family: var(--title-font);
-  font-size:90px;
+  font-size: 90px;
   line-height: 8px;
 }
 
@@ -146,7 +143,7 @@ p {
   align-self: center;
 }
 
-.paw-print img{
+.paw-print img {
   width: 50px;
 }
 
@@ -173,13 +170,12 @@ p {
   font-family: var(--text-font);
 }
 
-
 .services div {
   margin: 40px;
 }
 
 .service {
-  display:flex;
+  display: flex;
   flex-direction: column;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
@@ -187,7 +183,7 @@ p {
   padding: 30px;
 }
 
-.img-service{
+.img-service {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,9 +191,9 @@ p {
   height: 150px;
   background-size: cover;
   background-position: center;
+
   /* overflow: hidden; */
 }
-
 
 .service:hover {
   transform: scale(1.05);
@@ -286,10 +282,13 @@ p {
   color: white;
   perspective: 1000px;
   transform-origin: center;
- /* This is the element that rotates with the animation */
- /* Individual cards */
+
+  /* This is the element that rotates with the animation */
+
+  /* Individual cards */
 }
-.icon-cards__content {
+
+.icon-cards-content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -298,10 +297,12 @@ p {
   transform: translateZ(-30vw) rotateY(0);
   animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
-.icon-cards__content.step-animation {
+
+.icon-cards-content.step-animation {
   animation: carousel 16s infinite steps(1) forwards;
 }
-.icon-cards__item {
+
+.icon-cards-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -311,41 +312,51 @@ p {
   height: 40vw;
   max-width: 380px;
   max-height: 250px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
   border-radius: 6px;
   transform-origin: center;
 }
-.icon-cards__item:nth-child(1) {
+
+.icon-cards-item:nth-child(1) {
   /* background: #fdd94f; */
   background: white;
   transform: rotateY(0) translateZ(35vw);
 }
-.icon-cards__item:nth-child(2) {
+
+.icon-cards-item:nth-child(2) {
   /* background: #f87949; */
   background: white;
   transform: rotateY(120deg) translateZ(35vw);
 }
-.icon-cards__item:nth-child(3) {
+
+.icon-cards-item:nth-child(3) {
   /* background: #fbab48; */
   background: white;
   transform: rotateY(240deg) translateZ(35vw);
 }
+
 /* Carousel animation */
 @keyframes carousel {
-  0%, 17.5% {
+  0%,
+  17.5% {
     transform: translateZ(-35vw) rotateY(0);
- }
-  27.5%, 45% {
-    transform: translateZ(-35vw) rotateY(-120deg);
- }
-  55%, 72.5% {
-    transform: translateZ(-35vw) rotateY(-240deg);
- }
-  82.5%, 100% {
-    transform: translateZ(-35vw) rotateY(-360deg);
- }
-}
+  }
 
+  27.5%,
+  45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+
+  55%,
+  72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+  }
+
+  82.5%,
+  100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
 
 /* --- Buttons --- */
 
@@ -388,7 +399,7 @@ p {
   z-index: 2;
 }
 
-.btnsection2{
+.btnsection2 {
   margin-top: 40px;
 }
 
