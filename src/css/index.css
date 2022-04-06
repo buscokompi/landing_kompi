@@ -1,7 +1,8 @@
 :root {
   --primary-color: #f9b225;
   --secondary-color: #ffe194;
-  --terciary-color: #325b72;
+  --terciary-color: #d11149;
+  --terciary2-color: #c83e4d;
   --brown-color: #3f3d3b;
   --white-color: #fff;
   --black-color: #000;
@@ -332,7 +333,7 @@ p {
 
 .button:hover::after {
   transform: scale(400);
-  background: var(--secondary-color);
+  background: var(--terciary-color);
 }
 
 .button span {
