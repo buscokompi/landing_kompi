@@ -13,11 +13,14 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 body,
 h1 {
   margin: 0;
+  width: 100%;
 }
 
 /**  HEADER  **/
@@ -26,6 +29,7 @@ h1 {
   background-image: url("../assets/images/imgDogs2.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 
 /* .fijo {
@@ -115,11 +119,14 @@ p {
 .container h1 {
   font-family: var(--title-font);
   font-size: 90px;
+  line-height: 8px;
+  margin: 36px;
 }
 
 .container p {
   font-family: var(--subtitle-font);
   font-size: 24px;
+  line-height: 8px;
 }
 
 .link {
@@ -162,12 +169,12 @@ p {
 
 .services {
   display: flex;
-  margin: 0 300px;
-  justify-content: space-between;
+  margin: 0 10%;
+  justify-content: space-around;
 }
 
 .services div {
-  margin: 40px;
+  margin: 5%;
 }
 
 .service {
@@ -176,17 +183,23 @@ p {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
   transition: transform 0.5s;
-  padding: 20px;
+  margin: 20px;
+  padding: 15px;
+}
+
+.img-section {
+  width: 17vw;
+  height: 70%;
+  object-fit: fill;
 }
 
 .img-service {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 150px;
   background-size: cover;
   background-position: center;
+  height: 50%;
 }
 
 .service:hover {
@@ -210,10 +223,20 @@ p {
 
 .section-3 {
   display: flex;
-  flex-direction: column;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.background {
   background-color: var(--primary-color);
-  padding-bottom: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 0;
 }
 
 .texts {
@@ -244,7 +267,7 @@ p {
   grid-template-columns: repeat(5, 100px);
   justify-content: space-around;
   justify-items: center;
-  margin: 0 200px;
+  margin: 0 10%;
 }
 
 .containerimg {
@@ -274,67 +297,166 @@ p {
   filter: blur(4px) brightness(50%);
 }
 
+/* SECTION 4 */
+
+/* Cards Carousel */
+.section-4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--secondary-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+
+.unionsection3 {
+  width: 100%;
+  height: 150px;
+}
+
+.text-reviews h2 {
+  margin-top: 32px;
+  font-family: var(--title-font);
+  color: var(--dark-color);
+  font-size: 36px;
+  padding: 30px;
+}
+
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+
+  /* This is the element that rotates with the animation */
+
+  /* Individual cards */
+}
+
+.icon-cards-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  animation: carousel 20s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.icon-cards-content.step-animation {
+  animation: carousel 16s infinite steps(1) forwards;
+}
+
+.icon-cards-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  transform-origin: center;
+}
+
+.icon-cards-item:nth-child(1) {
+  /* background: #fdd94f; */
+  background: white;
+  transform: rotateY(0) translateZ(35vw);
+}
+
+.icon-cards-item:nth-child(2) {
+  /* background: #f87949; */
+  background: white;
+  transform: rotateY(120deg) translateZ(35vw);
+}
+
+.icon-cards-item:nth-child(3) {
+  /* background: #fbab48; */
+  background: white;
+  transform: rotateY(240deg) translateZ(35vw);
+}
+
+/* Carousel animation */
+@keyframes carousel {
+  0%,
+  17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+
+  27.5%,
+  45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+
+  55%,
+  72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+  }
+
+  82.5%,
+  100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+
 /* --- Footer --- */
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #3f3d3b;
-  height: 700px;
-  margin-top: 4rem;
+  height: 38vh;
 }
 
-.social-media {
+.information {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 12px;
-}
-
-.img {
-  display: flex;
-  align-items: center;
-  width: 35rem;
-  height: 13rem;
-  gap: 2rem;
+  padding-top: 2%;
 }
 
 .about-us {
   display: flex;
-  margin-top: -7rem;
-  height: 20px;
   flex-direction: column;
-  width: 300px;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  padding-left: 20rem;
-  line-height: 25px;
-  text-align: justify;
-  font-size: 12px;
+  margin-left: 15%;
+  width: 40%;
+  font-family: var(--text-font);
 }
 
-.about-us p {
-  margin-top: 40px;
+.space {
+  width: 40%;
+}
+
+.about-us h5 {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-right: 10%;
 }
 
 .copyright {
   display: flex;
-  position: absolute;
-  width: 30rem;
-  height: 8rem;
-  margin-left: 10rem;
-  margin-top: 28rem;
-}
-
-.copyright div {
-  display: flex;
-  position: absolute;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  flex-direction: column-reverse;
-  align-items: center;
-  font-size: 12px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .copyright hr {
   background-color: grey;
-  width: 100rem;
+  width: 70%;
 }
 
 /* --- Buttons --- */
@@ -379,6 +501,10 @@ p {
 
 .btnsection2 {
   margin-top: 40px;
+}
+
+.btnsection4 {
+  margin-top: 150px;
 }
 
 /* ----------------- */
