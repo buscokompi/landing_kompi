@@ -14,10 +14,12 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
+  font-size: 62.5%; /* hack 1rem = 10px */
 }
 
 body {
   width: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -183,7 +185,6 @@ p {
   text-align: center;
 }
 
-
 .services {
   display: flex;
   font-size: 16px;
@@ -203,10 +204,12 @@ p {
   padding: 15px;
   margin: 20px;
 }
-.img-section{
+
+.img-section {
   width: 17vw;
   height: 60%;
 }
+
 .img-service {
   display: flex;
   justify-content: center;
@@ -214,6 +217,7 @@ p {
   background-size: cover;
   background-position: center;
   height: 50%;
+
   /* overflow: hidden; */
 }
 
@@ -279,7 +283,7 @@ p {
 
 .gridimg {
   display: grid;
-  grid-template-columns: repeat(5,5%);
+  grid-template-columns: repeat(5, 5%);
   justify-content: space-between;
   align-content: center;
   margin-left: 10%;
@@ -331,6 +335,7 @@ p {
 .unionsection3 {
   width: 100px;
   height: 100px;
+  margin-top: -4rem; /* WARNING: no deberiamos usar valores negativos */
 }
 
 .text-reviews h2 {
@@ -406,7 +411,6 @@ p {
 
 /* Carousel animation */
 @keyframes carousel {
-
   0%,
   17.5% {
     transform: translateZ(-35vw) rotateY(0);
@@ -434,33 +438,42 @@ footer {
   height: 300px;
   width: 100%;
 }
-.info{
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 100%;
-height: 80%;
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
 }
 
 i {
   font-size: xx-large;
   color: white;
 }
+
 i:hover {
   color: var(--primary-color);
 }
+
 .img {
   display: flex;
   width: 45%;
-  gap: 2rem;
+  gap: 2rem; /* WARNING : Modificar ahora que 1rem = 10px */
 }
 
 .about-us {
   width: 45%;
 }
-.copyright{
+
+.about-us h5 {
+  color: white;
+}
+
+.copyright {
   margin-left: 70%;
 }
+
 /* --- Buttons --- */
 
 .button {
