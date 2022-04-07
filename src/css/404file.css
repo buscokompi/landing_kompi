@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans';
+    color: white;
+}
+
+section{
+    background: linear-gradient(45deg, #f9b225, #ffe194);
+    height: 100vh;
+}
+.box{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 1rem;
+    background-color: #f9b225;
+    box-shadow: 0 0.1rem 1rem rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.semi-bold{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    
+}
+
+.img-pug{
+    width: 50%;
+    height: auto;   
+}
+
+.button {
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #D11149;
+    margin-top: 3rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transition: 0.4s;
+    background: white;
+    color: #D11149;
+ 
