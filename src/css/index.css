@@ -236,6 +236,8 @@ p {
 }
 
 /* --- Footer --- */
+
+/*
 .footer {
   background-color: #3f3d3b;
   height: 700px;
@@ -293,10 +295,13 @@ p {
   font-size: 12px;
 }
 
-.copyright hr {
-  background-color: grey;
-  width: 100rem;
+.div hr {
+  height: 70rem;
 }
+
+.line {
+  width: 100rem;
+} */
 
 /* ------------- */
 
