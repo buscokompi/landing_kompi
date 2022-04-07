@@ -3,6 +3,7 @@
   --secondary-color: #ffe194;
   --terciary-color: #d11149;
   --terciary2-color: #c83e4d;
+  --brown-color: #3f3d3b;
   --white-color: #fff;
   --dark-color: #3f3d3b;
   --title-font: "Dosis", sans-serif;
@@ -12,11 +13,14 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 body,
 h1 {
   margin: 0;
+  width: 100%;
 }
 
 /**  HEADER  **/
@@ -25,9 +29,10 @@ h1 {
   background-image: url("../assets/images/imgDogs2.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 
-.fijo {
+/* .fijo {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -53,6 +58,8 @@ h1 {
 /* --- Section 0 --- */
 .section-0 {
   width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 
 .kompi-logo {
@@ -68,14 +75,6 @@ h1 {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
 
-/* --->Hacer que la barra de navegación sea invisible  */
-
-.backbar {
-  background-color: var(--white-color);
-  transition: 1s ease;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
-}
-
 .backbar2 {
   background-color: transparent;
   transition: 1s ease;
@@ -86,11 +85,8 @@ h1 {
   gap: 32px;
 }
 
-.topbar .navegation a {
+.navegation a {
   color: var(--primary-color);
-
-  /* .navegation a {
-  color: white; */
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 20px;
@@ -153,7 +149,7 @@ p {
 }
 
 .paw-print {
-  margin-top: 150px;
+  margin-top: 95px;
   align-self: center;
 }
 
@@ -172,20 +168,19 @@ p {
 
 .text-slogan h3 {
   font-family: var(--text-font);
-  color: var(--dark-color);
+  color: var(--black-color);
   font-size: 20px;
   text-align: center;
 }
 
 .services {
   display: flex;
-  margin: 0 300px;
-  font-size: 16px;
-  font-family: var(--text-font);
+  margin: 0 10%;
+  justify-content: space-around;
 }
 
 .services div {
-  margin: 40px;
+  margin: 5%;
 }
 
 .service {
@@ -194,20 +189,23 @@ p {
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
   transition: transform 0.5s;
-  padding: 30px;
-  margin: 30px;
+  margin: 20px;
+  padding: 15px;
+}
+
+.img-section {
+  width: 17vw;
+  height: 70%;
+  object-fit: fill;
 }
 
 .img-service {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 150px;
   background-size: cover;
   background-position: center;
-
-  /* overflow: hidden; */
+  height: 50%;
 }
 
 .service:hover {
@@ -233,9 +231,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
-.background3 {
+.background {
   background-color: var(--primary-color);
   background-size: cover;
   background-position: center;
@@ -243,7 +242,6 @@ p {
   margin-top: 30px;
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 200px;
   z-index: 0;
 }
 
@@ -273,10 +271,9 @@ p {
 .gridimg {
   display: grid;
   grid-template-columns: repeat(5, 100px);
-  justify-content: space-between;
-  align-content: center;
-  margin-left: 300px;
-  margin-right: 300px;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 0 10%;
 }
 
 .containerimg {
@@ -315,15 +312,14 @@ p {
   display: flex;
   background-color: var(--secondary-color);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   z-index: -1;
 }
 
 .unionsection3 {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 150px;
 }
 
 .text-reviews h2 {
@@ -422,64 +418,51 @@ p {
 
 /* --- Footer --- */
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #3f3d3b;
-  height: 700px;
+  height: 38vh;
 }
 
-.social-media {
+.information {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 12px;
-}
-
-.img {
-  display: flex;
-  align-items: center;
-  width: 35rem;
-  height: 13rem;
-  gap: 2rem;
+  padding-top: 2%;
 }
 
 .about-us {
   display: flex;
-  margin-top: -7rem;
-  height: 20px;
   flex-direction: column;
-  width: 300px;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  padding-left: 20rem;
-  line-height: 25px;
-  text-align: justify;
-  font-size: 12px;
+  margin-left: 15%;
+  width: 40%;
+  font-family: var(--text-font);
 }
 
-.about-us p {
-  margin-top: 40px;
+.space {
+  width: 40%;
+}
+
+.about-us h5 {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-right: 10%;
 }
 
 .copyright {
   display: flex;
-  position: absolute;
-  width: 30rem;
-  height: 8rem;
-  margin-left: 10rem;
-  margin-top: 28rem;
-}
-
-.copyright div {
-  display: flex;
-  position: absolute;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  flex-direction: column-reverse;
-  align-items: center;
-  font-size: 12px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .copyright hr {
   background-color: grey;
-  width: 100rem;
+  width: 70%;
 }
 
 /* --- Buttons --- */
@@ -490,7 +473,6 @@ p {
   padding: 15px 50px;
   border-radius: 50px;
   font-family: var(--text-font);
-  font-weight: 400;
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -528,5 +510,7 @@ p {
 }
 
 .btnsection4 {
-  margin-top: 132px;
+  margin-top: 150px;
 }
+
+/* ----------------- */
