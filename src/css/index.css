@@ -32,7 +32,7 @@ h1 {
   width: 100%;
 }
 
-/* .fijo {
+.fijo {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -45,24 +45,38 @@ h1 {
 }
 
 .backbar {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   transition: 1s ease;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.backbar .kompi-logo{
+  content: url("../assets/icons/logo_versioncolor.png");
+}
+
+.backbar .navegation a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 1s;
 }
 
 .backbar2 {
   background-color: transparent;
   transition: 1s ease;
-} */
+}
 
 /* --- Section 0 --- */
 .section-0 {
   width: 100%;
-  position: fixed;
   z-index: 5;
 }
 
 .kompi-logo {
   width: 180px;
+  transition: content 1s;
 }
 
 .topbar {
@@ -70,8 +84,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 70px;
-  background-color: var(--white-color);
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  background-color: transparent;
 }
 
 .navegation {
@@ -80,7 +93,7 @@ h1 {
 }
 
 .navegation a {
-  color: var(--primary-color);
+  color: var(--white-color);
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 20px;
