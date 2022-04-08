@@ -32,7 +32,9 @@ h1 {
   width: 100%;
 }
 
-.fijo {
+
+/* --- Topbar javascript classes --- */
+/*.fixed {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -42,19 +44,19 @@ h1 {
 
 .padding {
   padding-top: 110px;
-}
+}*/
 
-.backbar {
+.topbar-lower {
   background-color: var(--white-color);
   transition: 1s ease;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
 
-.backbar .kompi-logo{
+.topbar-lower  .kompi-logo{
   content: url("../assets/icons/logo_versioncolor.png");
 }
 
-.backbar .navegation a {
+.topbar-lower  .navegation a {
     color: var(--primary-color);
     text-decoration: none;
     font-family: var(--text-font);
@@ -63,7 +65,7 @@ h1 {
     transition: color 1s;
 }
 
-.backbar2 {
+.topbar-upper {
   background-color: transparent;
   transition: 1s ease;
 }
@@ -72,6 +74,7 @@ h1 {
 .section-0 {
   width: 100%;
   z-index: 5;
+  position: fixed;
 }
 
 .kompi-logo {
