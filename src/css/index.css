@@ -5,7 +5,7 @@
   --terciary2-color: #c83e4d;
   --brown-color: #3f3d3b;
   --white-color: #fff;
-  --dark-color: #3f3d3b;
+  --black-color: #000;
   --title-font: "Dosis", sans-serif;
   --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
@@ -44,7 +44,6 @@ h1 {
   padding-top: 110px;
 }
 
-/*
 .backbar {
   background-color: var(--primary-color);
   transition: 1s ease;
@@ -70,26 +69,31 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 70px;
+  padding: 0px 70px;
   background-color: var(--white-color);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
 
-.backbar2 {
-  background-color: transparent;
-  transition: 1s ease;
-}
-
-.topbar .navegation {
+ul {
   display: flex;
   gap: 32px;
+}
+li{
+  list-style: none;
+}
+
+.menu-icon {
+  display: none;
+}
+#menuToggle {
+  display: none;
 }
 
 .navegation a {
   color: var(--primary-color);
   text-decoration: none;
   font-family: var(--text-font);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -117,9 +121,9 @@ h1 {
   text-align: center;
 }
 
-.container h1,
-p {
+.container h1, span,p {
   color: var(--white-color);
+
 }
 
 .container h1 {
@@ -128,11 +132,20 @@ p {
   line-height: 8px;
   margin: 36px;
 }
-
-.container p {
+.txt-rotate{
+  line-height: 10rem;
+}
+ .container-text{
+  width: 100vw;
+  height: 150px;
+  line-height: 2rem;
+} 
+.container-text span{
   font-family: var(--subtitle-font);
   font-size: 24px;
   line-height: 8px;
+  width: 100%;
+  height: 40%;
 }
 
 .link {
@@ -149,7 +162,7 @@ p {
 }
 
 .paw-print {
-  margin-top: 95px;
+  margin-top: 7% ;
   align-self: center;
 }
 
@@ -163,7 +176,7 @@ p {
   font-family: var(--title-font);
   color: var(--primary-color);
   font-size: 36px;
-  line-height: 8px;
+  line-height: 1em;
 }
 
 .text-slogan h3 {
@@ -175,28 +188,32 @@ p {
 
 .services {
   display: flex;
-  margin: 0 10%;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 }
 
-.services div {
-  margin: 5%;
-}
+/* .services div {
+  margin:0% 5%;
+  
+} */
 
 .service {
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
   transition: transform 0.5s;
-  margin: 20px;
   padding: 15px;
+  width: 70%;
+  height: 30%;
+  margin: 4%;
 }
 
-.img-section {
-  width: 17vw;
-  height: 70%;
-  object-fit: fill;
+.text-service { 
+  width: 100%;
+  text-align: center;
 }
 
 .img-service {
@@ -205,7 +222,12 @@ p {
   align-items: center;
   background-size: cover;
   background-position: center;
-  height: 50%;
+}
+
+.img-section {
+  width: 80%;
+  height: 15vh;
+  object-fit: fill;
 }
 
 .service:hover {
@@ -214,7 +236,7 @@ p {
 
 .service h2 {
   font-family: var(--subtitle-font);
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .service p {
@@ -229,6 +251,7 @@ p {
 
 .section-3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
@@ -250,8 +273,11 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 150px;
-  width: 700px;
+  margin-left: 12%;
+  margin-top: 2%;
+  width: 80%;
+
+  /* width: 80%; media query  */
 }
 
 .texts h1 {
@@ -270,10 +296,10 @@ p {
 
 .gridimg {
   display: grid;
-  grid-template-columns: repeat(5, 100px);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   justify-items: center;
-  margin: 0 10%;
+  margin: 5% 10% 10% 10%;
 }
 
 .containerimg {
@@ -282,7 +308,7 @@ p {
   align-items: center;
   width: 220px;
   height: 220px;
-  margin-top: 70px;
+  margin: 15%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 50%;
   overflow: hidden;
@@ -308,18 +334,18 @@ p {
 /* Cards Carousel */
 .section-4 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   background-color: var(--secondary-color);
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: -1;
 }
 
 .unionsection3 {
   width: 100%;
-  height: 150px;
+  height: 130px;
+  margin-top: -3px;
 }
 
 .text-reviews h2 {
@@ -395,6 +421,7 @@ p {
 
 /* Carousel animation */
 @keyframes carousel {
+
   0%,
   17.5% {
     transform: translateZ(-35vw) rotateY(0);
@@ -421,24 +448,31 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #3f3d3b;
-  height: 38vh;
+  height: 45vh;
 }
 
 .information {
   display: flex;
-  padding-top: 2%;
+  margin-top: 4%;
+  justify-content: space-around;
 }
 
 .about-us {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  width: 40%;
+  width: 70%;
+  height: 35vh;
   font-family: var(--text-font);
 }
 
-.space {
+/* .space {
   width: 40%;
+} */
+
+.rrss {
+  filter: invert();
+  height: 40px;
+
 }
 
 .about-us h5 {
@@ -448,9 +482,8 @@ p {
 
 .social-media {
   display: flex;
-  justify-content: space-around;
-  width: 20%;
-  margin-right: 10%;
+  justify-content: space-evenly;
+  width: 25%;
 }
 
 .copyright {
@@ -458,6 +491,7 @@ p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 1vh;
 }
 
 .copyright hr {
@@ -506,11 +540,105 @@ p {
 }
 
 .btnsection2 {
-  margin-top: 40px;
+  margin: 5% 0;
 }
 
 .btnsection4 {
-  margin-top: 150px;
+  margin: 7% 0;
 }
 
 /* ----------------- */
+@media (min-width: 0px) and (max-width: 1199px) { 
+  .navegation {
+    width: 100%;
+    height: 80px;
+  }
+  .navegation ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+
+  }
+  .navegation ul a {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0px 10px 5%;
+  }
+
+  .menu-icon {
+    margin-top: 20px;
+    margin-left: 90%;
+    width: 100px;
+    display: block;
+    line-height: 60px;
+  }
+  #menuToggle:checked ~ ul {
+    max-height: 300px;
+    /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+  }
+  .menu-icon i {
+    font-size: 3em;
+  }
+
+  .footer {
+    height: 45vh;
+  }
+  .about-us {
+    height:35vh;
+  }
+  .copyright {
+    margin-top: 6%;
+   }
+}
+/* para pantallas medianas */
+@media (min-width: 690px) { 
+  .footer {
+    height: 45vh;
+  }
+  .about-us {
+    height: 25vh;
+  }
+  .copyright {
+    margin-top: 8%;
+   }
+}
+/* para pantallas largas */
+@media (min-width: 1200px){ 
+  body{
+      background-color:rgb(255, 255, 255);
+  }
+  
+.services {
+  display: flex;
+  flex-direction: row;
+}
+.service {
+  width: 20%;
+}
+.gridimg {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+}
+.texts {
+  width: 30%;
+
+  /* width: 80%; media query  */
+}
+.footer {
+  height: 35vh;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 24vh;
+  font-family: var(--text-font);
+}
+.copyright {
+  margin-top: 0px;
+ }
+
+
+
+}
