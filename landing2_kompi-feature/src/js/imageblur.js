@@ -1,4 +1,4 @@
-const imagenes = document.querySelectorAll(".containerimg");
+const imagenes = document.querySelectorAll(".grid-container");
 
 function hoverimages(image) {
   for (let i = 0; i < imagenes.length; i++) {
