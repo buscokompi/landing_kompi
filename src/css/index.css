@@ -69,7 +69,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0 70px;
   background-color: var(--white-color);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
@@ -78,13 +78,15 @@ ul {
   display: flex;
   gap: 32px;
 }
-li{
+
+li {
   list-style: none;
 }
 
 .menu-icon {
   display: none;
 }
+
 #menuToggle {
   display: none;
 }
@@ -121,9 +123,10 @@ li{
   text-align: center;
 }
 
-.container h1, span,p {
+.container h1,
+span,
+p {
   color: var(--white-color);
-
 }
 
 .container h1 {
@@ -132,15 +135,18 @@ li{
   line-height: 8px;
   margin: 36px;
 }
-.txt-rotate{
+
+.txt-rotate {
   line-height: 10rem;
 }
- .container-text{
+
+.container-text {
   width: 100vw;
   height: 150px;
   line-height: 2rem;
-} 
-.container-text span{
+}
+
+.container-text span {
   font-family: var(--subtitle-font);
   font-size: 24px;
   line-height: 8px;
@@ -162,7 +168,7 @@ li{
 }
 
 .paw-print {
-  margin-top: 7% ;
+  margin-top: 7%;
   align-self: center;
 }
 
@@ -195,7 +201,7 @@ li{
 
 /* .services div {
   margin:0% 5%;
-  
+
 } */
 
 .service {
@@ -211,7 +217,7 @@ li{
   margin: 4%;
 }
 
-.text-service { 
+.text-service {
   width: 100%;
   text-align: center;
 }
@@ -299,7 +305,7 @@ li{
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   justify-items: center;
-  margin: 5% 10% 10% 10%;
+  margin: 5% 10% 10%;
 }
 
 .containerimg {
@@ -421,7 +427,6 @@ li{
 
 /* Carousel animation */
 @keyframes carousel {
-
   0%,
   17.5% {
     transform: translateZ(-35vw) rotateY(0);
@@ -472,7 +477,6 @@ li{
 .rrss {
   filter: invert();
   height: 40px;
-
 }
 
 .about-us h5 {
@@ -548,34 +552,53 @@ li{
 }
 
 /* ----------------- */
-@media (min-width: 0px) and (max-width: 1199px) { 
+@media (min-width: 0) and (max-width: 1199px) {
   .navegation {
-    width: 100%;
+    width: 100vh;
     height: 80px;
   }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
   .navegation ul {
     display: block;
     max-height: 0;
     overflow: hidden;
-
   }
+
   .navegation ul a {
-    text-align: left;
     width: 100%;
-    padding: 10px 0px 10px 5%;
   }
 
   .menu-icon {
     margin-top: 20px;
     margin-left: 90%;
-    width: 100px;
+    width: 10px;
     display: block;
-    line-height: 60px;
   }
+
   #menuToggle:checked ~ ul {
-    max-height: 300px;
-    /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    position: absolute;
+    max-width: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    /* Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width */
   }
+
+  .pepe {
+    margin: -70px -250px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(0 0 0);
+    opacity: 0.7;
+  }
+
   .menu-icon i {
     font-size: 3em;
   }
@@ -583,62 +606,64 @@ li{
   .footer {
     height: 45vh;
   }
+
   .about-us {
-    height:35vh;
+    height: 35vh;
   }
+
   .copyright {
     margin-top: 6%;
-   }
-}
-/* para pantallas medianas */
-@media (min-width: 690px) { 
-  .footer {
-    height: 45vh;
   }
+}
+
+/* para pantallas medianas */
+@media (min-width: 690px) {
   .about-us {
     height: 25vh;
   }
+
   .copyright {
     margin-top: 8%;
-   }
-}
-/* para pantallas largas */
-@media (min-width: 1200px){ 
-  body{
-      background-color:rgb(255, 255, 255);
   }
-  
-.services {
-  display: flex;
-  flex-direction: row;
 }
-.service {
-  width: 20%;
-}
-.gridimg {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  
-}
-.texts {
-  width: 30%;
 
-  /* width: 80%; media query  */
-}
-.footer {
-  height: 35vh;
-}
-.about-us {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 24vh;
-  font-family: var(--text-font);
-}
-.copyright {
-  margin-top: 0px;
- }
+/* para pantallas largas */
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(255 255 255);
+  }
 
+  .services {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .service {
+    width: 20%;
+  }
 
+  .gridimg {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .texts {
+    width: 30%;
+  }
+
+  .footer {
+    height: 35vh;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 24vh;
+    font-family: var(--text-font);
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
 }

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   iniciarApp();
 });
 
@@ -11,7 +11,7 @@ function navegacionFija() {
   const section = document.querySelector(".section-1");
   const aux = document.querySelector(".section-1");
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (section.getBoundingClientRect().top < 0) {
       header.classList.add("fijo");
       aux.classList.add("padding");
@@ -32,4 +32,16 @@ function navegacionFija() {
       x.className = "topnav";
     }
   }
+}
+
+
+function makeNoneScrollable() {
+
+  document.querySelector("body").classList.add(".overflow-hidden")
+
+}
+
+
+function disableScroll() {
+  document.querySelector("body").classList.add(".overflow-hidden");
 }
