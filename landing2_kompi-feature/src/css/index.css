@@ -69,6 +69,7 @@ h1 {
   align-items: center;
   padding: 0 4.4rem;
   background-color: transparent;
+  margin: 0 4.5%;
 }
 
 .topbar-lower {
@@ -88,6 +89,10 @@ h1 {
   font-size: 1.25rem;
   font-weight: 600;
   transition: color 1s;
+}
+
+.topbar-lower .navegation a:hover {
+  color: var(--terciary-color);
 }
 
 .menu-icon {
@@ -267,11 +272,11 @@ li {
 }
 
 .background {
-  background-color: var(--primary-color);
+  background-image: url("../assets/images/fondo_seccion3_4.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 1.9rem;
   width: 100%;
   min-height: 100vh;
   z-index: 0;
@@ -282,25 +287,28 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 12%;
+  margin-left: 16%;
   margin-top: 2%;
   width: 80%;
 
   /* width: 80%; media query  */
 }
 
-.section-3-text h1 {
-  margin-top: 30px;
+.section-3-text h2 {
   font-family: var(--title-font);
   color: var(--white-color);
-  font-size: 40px;
+  font-size: 2.25rem;
+  margin-top: 35%;
+  margin-bottom: 3%;
 }
 
 .section-3-text p {
-  margin-top: 20px;
-  font-family: var(--text-font);
   color: var(--white-color);
-  font-size: 25px;
+  font-family: var(--text-font);
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
 }
 
 .grid {
@@ -308,17 +316,17 @@ li {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   justify-items: center;
-  margin: 5% 10% 10%;
+  margin: 3% 15% 5%;
 }
 
 .grid-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 220px;
+  width: 13.75rem;
+  height: 13.75rem;
   margin: 15%;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.7s, filter 0.6s ease-in-out, border-radius 0.7s;
@@ -331,11 +339,12 @@ li {
 
 .zoom {
   transform: scale(1.6);
-  border-radius: 15px;
+  border-radius: 0.94rem;
+  z-index: 2;
 }
 
 .blur {
-  filter: blur(4px) brightness(50%);
+  filter: blur(0.25rem) brightness(50%);
 }
 
 /* SECTION 4 */
@@ -353,27 +362,27 @@ li {
 
 .union-paw {
   width: 100%;
-  height: 130px;
-  margin-top: -3px;
+  height: 8.12rem;
+  margin-top: -0.19rem;
 }
 
 .reviews-text h2 {
-  margin-top: 32px;
+  margin-top: 2rem;
   font-family: var(--title-font);
   color: var(--dark-color);
-  font-size: 36px;
-  padding: 30px;
+  font-size: 2.26rem;
+  padding: 1.88rem;
 }
 
 .review-cards {
   position: relative;
   width: 60vw;
   height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
+  max-width: 23.75rem;
+  max-height: 15.63rem;
   margin: 0;
   color: white;
-  perspective: 1000px;
+  perspective: 62.5rem;
   transform-origin: center;
 
   /* This is the element that rotates with the animation */
@@ -403,10 +412,10 @@ li {
   bottom: 0;
   width: 60vw;
   height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
-  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
-  border-radius: 6px;
+  max-width: 23.75rem;
+  max-height: 15.63rem;
+  box-shadow: 0 0.3rem 1.25rem rgb(0 0 0 / 5%);
+  border-radius: 0.4rem;
   transform-origin: center;
 }
 
@@ -479,12 +488,12 @@ li {
 
 .rrss {
   filter: invert();
-  height: 40px;
+  height: 2.5rem;
 }
 
 .about-us h5 {
   color: var(--white-color);
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .social-media {
@@ -519,7 +528,6 @@ li {
   font-size: 1.25rem;
   color: white;
   background-color: var(--primary-color);
-  transition: 0.4s ease all;
   overflow: hidden;
 }
 
@@ -551,6 +559,46 @@ li {
   margin: 2.5% 0 5%;
 }
 
+.container-btn-section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-section3 {
+  color: var(--white-color);
+  position: relative;
+  display: inline-flex;
+  padding: 0.8rem 2.8rem;
+  border-radius: 3rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.25rem;
+  overflow: hidden;
+  border: var(--white-color) 0.15rem solid;
+  margin-bottom: 5rem;
+}
+
+.btn-section3::after {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  content: "";
+  transition: 0.3s ease-in-out all;
+}
+
+.btn-section3:hover::after {
+  transform: scale(400);
+  background: var(--terciary-color);
+}
+
+.btn-section3 span {
+  position: relative;
+  z-index: 2;
+}
+
 .btnsection4 {
   margin: 7% 0;
 }
@@ -559,7 +607,7 @@ li {
 @media (min-width: 0) and (max-width: 1199px) {
   .navegation {
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
   }
 
   .services-card {
@@ -575,19 +623,19 @@ li {
   .navegation ul a {
     text-align: left;
     width: 100%;
-    padding: 10px 0 10px 5%;
+    padding: 0.63rem 0 0.63rem 5%;
   }
 
   .menu-icon {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     margin-left: 90%;
-    width: 100px;
+    width: 6.25rem;
     display: block;
-    line-height: 60px;
+    line-height: 3.75rem;
   }
 
   #menu-toggle:checked ~ ul {
-    max-height: 300px;
+    max-height: 18.75rem;
 
     /* Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width */
   }
