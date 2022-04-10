@@ -62,7 +62,7 @@ h2{
     cursor: pointer;
   }
   
-  .button:hover {
+.button:hover {
     transition: 0.4s;
     background: white;
     color: #D11149;
