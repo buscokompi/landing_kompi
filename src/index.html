@@ -12,179 +12,162 @@
 </head>
 
 <body>
-    <header class="header">
-
-        <div class="section-0">
-            <div class="topbar">
-                <div class="brand">
-                    <a href="#">
-                        <img class="kompi-logo" src="assets/icons/logo_versioncolor.png" alt="Logo">
-                    </a>
-                </div>
-                <!-- <nav class="navegation">
-                    <a href="#anchorservices">Servicios</a>
-                    <a href="#anchoranimals">Nuestros kompis</a>
-                    <a href="#anchoradoptar">Adopta</a>
-                </nav> -->
-                <nav class="navegation">
-                    <input type="checkbox" id="menuToggle">
-                    <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-                    <ul class="menu">
-                        <a href="#anchorservices">
-                            <li>Servicios</li>
-                        </a>
-                        <a href="#anchoranimals">
-                            <li>Nuestros kompis</li>
-                        </a>
-                        <a href="#anchoradoptar">
-                            <li>Adopta</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
+    <header class="topbar">
+        <div class="topbar-logo">
+            <!-- no hace falta -->
+            <a href="#">
+                <img class="kompi-logo" src="assets/icons/kompi_logo.png" alt="Logo">
+            </a>
         </div>
-
-        <section class="section-1">
-            <div class="container">
-                <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
-                        data-rotate='[ "perro?", "gato?", "kompi?" ]'></span>
-                </h1>
-                <div class="container-text">
-                    <span>
-                        Adopta facilmente y sin complicaciones a tu proximo acompañante peludo.
-                    </span>
-                </div>
-                <div class="link">
-                    <a class="button" href="./webprove.html"> <span>Adopta</span></a>
-                </div>
-            </div>
-        </section>
+        <nav class="navegation">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <ul>
+                <a href="#anchorservices">
+                    <li>Servicios</li>
+                </a>
+                <a href="#anchoranimals">
+                    <li>Nuestros kompis</li>
+                </a>
+                <a href="#anchoradoptar">
+                    <li>Testimonios</li>
+                </a>
+            </ul>
+        </nav>
     </header>
-    <div id="anchorservices"></div>
-    <section class="section-2">
 
-        <div class="paw-print">
-            <img src="./assets/icons/Icono_logo.svg">
+    <section class="section-1">
+        <div class="container">
+            <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
+                    data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
+            </h1>
+            <div class="container-text">
+                <p>
+                    Adopta gratis y fácilmente a tu próxima mascota
+                </p>
+            </div>
+            <div class="container-button">
+                <a class="button" href="./404file.html"> <span>Adopta</span></a>
+            </div>
         </div>
-
+    </section>
+    <!-- <div id="anchorservices"></div> -->
+    <section class="section-2" id="anchorservices">
+        <div class="paw-print">
+            <img src="./assets/icons/Icono_logo.svg" alt="logo kompi">
+        </div>
         <div class="text-slogan">
-            <h2>La mejor forma de adoptar.</h2>
+            <h2>La mejor forma de adoptar</h2>
             <h3>Conoce más de nuestros servicios</h3>
         </div>
-
         <div class="services">
-
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_busca.svg" alt="vector_encuentra_en_kompi"
-                        sizes="">
+            <div class="services-card">
+                <div class="img-services">
+                    <!-- no hace falta -->
+                    <img class="img-section-2" src="./assets/icons/icono_busca.svg"
+                        alt="lupa de busqueda en pagina web">
                 </div>
-                <h2>SERVICIOS</h2>
-                <div class="text-service">
-                    <p>Con Kompi es fácil encontrar al perro o gato que buscas.
+                <h3>BUSCA</h3>
+                <div class="text-services">
+                    <p class="text-content">Con Kompi es fácil encontrar al perro o gato que buscas.
                         Simplemente pulsa el botón “Adopta” e ingresa tu código
                         postal para comenzar la búsqueda.</p>
                 </div>
             </div>
-
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_encuentra.svg" alt="vector_encuentra_en_kompi"
-                        sizes="">
+            <div class="services-card">
+                <div class="img-services">
+                    <img class="img-section-2" src="./assets/icons/icono_encuentra.svg"
+                        alt="resultado de la busqueda en la pagina web">
                 </div>
-                <h2>VENTAJAS</h2>
-                <div class="text-service">
-                    <p>Una vez que encuentres a tu próxima mascota haz click
+                <h3>ENCUENTRA</h3>
+                <div class="text-services">
+                    <p class="text-content">Una vez que encuentres a tu próxima mascota haz click
                         en “Adóptame” para obtener información de contacto de
                         su refugio, rescate u hogar actual.</p>
                 </div>
             </div>
-
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_adopta.svg" alt="vector_adopta_en_kompi"
-                        sizes="">
+            <div class="services-card">
+                <div class="img-services">
+                    <img class="img-section-2" src="./assets/icons/icono_adopta.svg" alt="seguridad en un intercambio">
                 </div>
-                <h2>ADOPTA</h2>
-                <div class="text-service">
-                    <p>El centro de rescate, refugio u hogar actual lo guiará a través del proceso de adopción. Prepara
-                        tu
-                        hogar para facilitar al nuevo miembro la llegada
-                        a su nueva familia.</p>
+                <h3>ADOPTA</h3>
+                <div class="text-services">
+                    <p class="text-content">El centro de rescate, refugio u hogar actual le guiará a través del proceso
+                        de adopción.
+                        Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia.</p>
                 </div>
             </div>
         </div>
-
         <div class="btnsection2">
-            <a class="button" href="./webprove.html"> <span>Adopta</span></a>
+            <a class="button" href="./404file.html"> <span>Adopta</span></a>
         </div>
-
     </section>
 
     <section class="section-3" id="anchoranimals">
         <div class="background">
-            <div class="texts">
-                <h1>Nuestros Kompis</h1>
-                <p>Nuestra familia está conformada por muchos Kompis.
-                    Busca a tu compañero fiel entre las +1000 posibles
-                    adopciones por toda España.</p>
+            <div class="section-3-text">
+                <h2>Nuestros Kompis</h2>
+                <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies.
+                    Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y gratuita</strong> de
+                    animales en España. Kompi registra y verifica previamente al animal y a su propietario actual.
+                    Mostrándote y filtrando resultados por intereses. Así como <u>asesorándote en todo el proceso de
+                        adopción</u>.</p>
             </div>
-
-            <div class="gridimg">
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgBracoWeimar.jpg">
+            <div class="grid">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgBracoWeimar.jpg" alt="imagen perro gris">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgRabbit.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgRabbit.jpg" alt="imagen conejo gris">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgGreyCat.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgGreyCat.jpg" alt="imagen perro gris">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgBorderCollie.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgBorderCollie.jpg" alt="imagen gato gris">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgHusky.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgHusky.jpg" alt="imagen perro husky">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgWhiteCat.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgWhiteCat.jpg" alt="imagen gato blanco">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgPitbull.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgPitbull.jpg" alt="imagen perro pitbull">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgSleapingCat.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgSleapingCat.jpg" alt="imagen gato gris dormido">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgHamster.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgHamster.jpg" alt="imagen hamster blanco">
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgYorkshire.jpg">
+                <div class="grid-container" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
+                    <img src="./assets/images/imgYorkshire.jpg" alt="imagen perro yorkshire">
                 </div>
             </div>
-            <div id="anchoradoptar"></div>
+            <div class="container-btn-section3">
+                <a class="btn-section3" href="./404file.html"> <span>Adopta</span></a>
+            </div>
         </div>
     </section>
 
-    <section class="section-4">
-        <img class="unionsection3" src="./assets/icons/huella_seccion3.svg">
-
-        <div class="text-reviews">
+    <section class="section-4" id="anchoradoptar">
+        <img class="union-paw" src="./assets/icons/huella_seccion3.svg" alt="huella fondo de pantalla">
+        <div class="reviews-text">
             <h2>Si ganas tú, ganamos todos</h2>
         </div>
-
-        <figure class="icon-cards mt-3">
-            <div class="icon-cards-content">
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
+        <figure class="review-cards mt-3">
+            <div class="review-cards-content">
+                <div class="review-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
                         alt="vector_encuentra_en_kompi" sizes=""></div>
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
+                <div class="review-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
                         alt="vector_encuentra_en_kompi" sizes=""></div>
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_adopta.svg"
+                <div class="review-cards-item"><img class="busca-img" src="assets/icons/icono_adopta.svg"
                         alt="vector_adopta_en_kompi" sizes=""></div>
             </div>
         </figure>
         <div class="btnsection4">
-            <a class="button" href="./webprove.html"> <span>Adopta</span></a>
+            <a class="button" href="./404file.html"> <span>Adopta</span></a>
         </div>
     </section>
 
@@ -205,15 +188,15 @@
 
             <div class="social-media">
                 <a href="https://twitter.com/BuscoKompi" target="_blank">
-                    <img class="rrss" src="./assets/icons/twitter.svg">
+                    <img class="rrss" src="./assets/icons/twitter.svg" alt="logo twitter">
                 </a>
 
                 <a href="https://www.facebook.com/profile.php?id=100079663393852" target="_blank">
-                    <img class="rrss" src="./assets/icons/facebook.svg">
+                    <img class="rrss" src="./assets/icons/facebook.svg" alt="logo facebook">
                 </a>
 
                 <a href="https://www.instagram.com/buscokompi/?hl=es" target="_blank">
-                    <img class="rrss" src="./assets/icons/instagramf.svg">
+                    <img class="rrss" src="./assets/icons/instagramf.svg" alt="logo instagram">
                 </a>
             </div>
         </div>
