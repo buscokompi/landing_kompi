@@ -21,7 +21,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = "<span class=\"wrap\">" + this.txt + "</span>";
 
   const that = this;
-  let delta = 300 - Math.random() * 100;
+  let delta = 250 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -52,6 +52,6 @@ window.onload = function() {
   // INJECT CSS
   const css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.05em solid #f9b225 }";
   document.body.appendChild(css);
 };
