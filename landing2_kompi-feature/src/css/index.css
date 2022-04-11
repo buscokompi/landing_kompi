@@ -39,14 +39,18 @@ h1 {
   padding-top: 110px;
 } */
 
-.section-0 {
+/* .section-0 {
   width: 100%;
   z-index: 5;
   position: fixed;
-}
+} */
 
 .kompi-logo {
   width: 11rem;
+}
+
+.topbar-logo a {
+  padding-left: 4.4rem;
 }
 
 .navegation a {
@@ -55,6 +59,10 @@ h1 {
   font-family: var(--text-font);
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.navegation a:last-of-type {
+  padding-right: 4.4rem;
 }
 
 .navegation a:hover {
@@ -67,9 +75,14 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4.4rem;
+
+  /* padding: 0 4.4rem; */
   background-color: transparent;
-  margin: 0 4.5%;
+
+  /* margin: 0 4.5%; */
+  width: 100%;
+  z-index: 5;
+  position: fixed;
 }
 
 .topbar-lower {
@@ -122,6 +135,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .container {
@@ -580,24 +594,24 @@ li {
   margin-bottom: 5rem;
 }
 
-.btn-section3::after {
+/* .btn-section3::after {
   position: absolute;
   width: 0.1rem;
   height: 0.1rem;
   border-radius: 50%;
   content: "";
   transition: 0.3s ease-in-out all;
+} */
+
+.btn-section3:hover {
+  background-color: var(--terciary-color);
+  border: var(--terciary-color) 0.15rem solid;
 }
 
-.btn-section3:hover::after {
-  transform: scale(400);
-  background: var(--terciary-color);
-}
-
-.btn-section3 span {
+/* .btn-section3 span {
   position: relative;
   z-index: 2;
-}
+} */
 
 .btnsection4 {
   margin: 7% 0;
