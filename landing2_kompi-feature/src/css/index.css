@@ -39,14 +39,12 @@ h1 {
   padding-top: 110px;
 } */
 
-.section-0 {
-  width: 100%;
-  z-index: 5;
-  position: fixed;
-}
-
 .kompi-logo {
   width: 11rem;
+}
+
+.topbar-logo a {
+  padding-left: 7.4rem;
 }
 
 .navegation a {
@@ -55,6 +53,10 @@ h1 {
   font-family: var(--text-font);
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.navegation a:last-of-type {
+  padding-right: 7.4rem;
 }
 
 .navegation a:hover {
@@ -67,9 +69,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4.4rem;
   background-color: transparent;
-  margin: 0 4.5%;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
 }
 
 .topbar-lower {
@@ -117,6 +120,7 @@ li {
   background-image: url("../assets/images/imgDogs2.jpg");
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -148,7 +152,7 @@ li {
 
 .container-text {
   width: 100vw;
-  height: 9.4rem;
+  height: 7rem;
 }
 
 .container-text p {
@@ -156,10 +160,6 @@ li {
   font-size: 1.7rem;
   line-height: 1.7rem;
   margin: 0;
-}
-
-.container-button {
-  padding-top: 1rem;
 }
 
 /**  SECTION-2  **/
@@ -305,9 +305,9 @@ li {
 .section-3-text p {
   color: var(--white-color);
   font-family: var(--text-font);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   margin-bottom: 0;
 }
 
@@ -339,7 +339,7 @@ li {
 
 .zoom {
   transform: scale(1.6);
-  border-radius: 0.94rem;
+  border-radius: 50%;
   z-index: 2;
 }
 
@@ -528,6 +528,7 @@ li {
   font-size: 1.25rem;
   color: white;
   background-color: var(--primary-color);
+  transition: 0.4s ease all;
   overflow: hidden;
 }
 
@@ -566,27 +567,37 @@ li {
 }
 
 .btn-section3 {
-  color: var(--white-color);
-  position: relative;
   display: inline-flex;
+  position: relative;
   padding: 0.8rem 2.8rem;
   border-radius: 3rem;
   font-family: var(--text-font);
   font-weight: 600;
   text-decoration: none;
   font-size: 1.25rem;
+  color: white;
+  border: var(--white-color) 0.1rem solid;
+  background-color: var(--primary-color);
+  transition: 0.4s ease all;
   overflow: hidden;
-  border: var(--white-color) 0.15rem solid;
-  margin-bottom: 5rem;
 }
 
 .btn-section3::after {
   position: absolute;
   width: 0.1rem;
   height: 0.1rem;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
   border-radius: 50%;
+  align-self: center;
   content: "";
+  background: none;
   transition: 0.3s ease-in-out all;
+}
+
+.btn-section3:hover {
+  border: var(--terciary-color) 0.1rem solid;
 }
 
 .btn-section3:hover::after {

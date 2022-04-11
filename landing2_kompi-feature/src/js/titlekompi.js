@@ -21,7 +21,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = "<span class=\"wrap\">" + this.txt + "</span>";
 
   const that = this;
-  let delta = 300 - Math.random() * 100;
+  let delta = 250 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 

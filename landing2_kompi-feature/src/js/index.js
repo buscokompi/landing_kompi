@@ -7,7 +7,7 @@ function iniciarApp() {
 }
 
 function navegacionFija() {
-  const header = document.querySelector(".section-0");
+  const header = document.querySelector(".topbar");
   const section = document.querySelector(".section-1");
   // const aux = document.querySelector(".section-1");
 
