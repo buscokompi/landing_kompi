@@ -615,57 +615,62 @@ li {
 }
 
 /* ----------------- */
-@media (min-width: 0) and (max-width: 1199px) {
-  .navegation {
-    width: 100%;
-    height: 11.25rem;
-  }
 
-  .services-card {
-    width: 15rem;
-  }
+.container h1 {
+  font-size: 50px;
+}
 
-  .navegation ul {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-  }
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3f3d3b;
+  height: 70vh;
+}
 
-  .navegation ul a {
-    text-align: left;
-    width: 100%;
-    padding: 0.63rem 0 0.63rem 5%;
-  }
+.navegation {
+  width: 100vh;
+  height: 80px;
+}
 
-  .menu-icon {
-    margin-top: 1.25rem;
-    margin-left: 90%;
-    width: 6.25rem;
-    display: block;
-    line-height: 3.75rem;
-  }
+.navegation ul {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+}
 
-  #menu-toggle:checked ~ ul {
-    max-height: 18.75rem;
+.navegation ul a {
+  width: 100%;
+  color: black;
+}
 
-    /* Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width */
-  }
+.menu-icon {
+  margin-top: 20px;
+  margin-left: 90%;
+  width: 10px;
+  display: block;
+}
 
-  .menu-icon i {
-    font-size: 3em;
-  }
+#menu-toggle:checked ~ ul {
+  max-width: 100rem;
+  max-height: 100rem;
+  opacity: 0.8;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-  .footer {
-    height: 45vh;
-  }
+.menu {
+  width: 10rem;
+  height: 12rem;
+  margin-top: 12px;
+}
 
-  .about-us {
-    height: 35vh;
-  }
-
-  .copyright {
-    margin-top: 6%;
-  }
+.menu-icon i {
+  font-size: 3em;
 }
 
 /* para pantallas medianas */
@@ -719,9 +724,143 @@ li {
     width: 50%;
     height: 24vh;
     font-family: var(--text-font);
+    font-size: 20px;
   }
 
   .copyright {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 0) and (max-width: px) {
+  .footer {
+    height: 30rem;
+  }
+
+  .rrss {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    gap: 2px;
+    margin-left: -38px;
+    position: absolute;
+    width: 450px;
+    height: 20px;
+  }
+
+  .information {
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .about-us {
+    display: flex;
+    margin-left: -8rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 18rem;
+    color: white;
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin-top: 5rem;
+    margin-left: -30px;
+    width: 450px;
+    color: white;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+  .footer {
+    height: 30rem;
+  }
+
+  .rrss {
+    position: absolute;
+    margin-left: 8rem;
+    width: 70px;
+    height: 28px;
+  }
+
+  .social-media {
+    width: 25rem;
+    margin-top: 35px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+  }
+
+  .information {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .about-us {
+    display: flex;
+    margin-left: -10rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 20rem;
+    color: white;
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin-top: 6rem;
+    width: 50rem;
+    color: white;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    height: 40vh;
+  }
+
+  .rrss {
+    position: absolute;
+    margin-left: 8rem;
+    width: 70px;
+    height: 28px;
+  }
+
+  .social-media {
+    margin-left: 80rem;
+    width: 50rem;
+    margin-top: 5rem;
+    display: flex;
+    position: absolute;
+  }
+
+  .information {
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    height: 12rem;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    color: white;
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 20px;
+    margin-top: 3rem;
+    color: white;
+    margin-top: 12rem;
   }
 }

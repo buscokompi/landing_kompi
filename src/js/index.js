@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   iniciarApp();
 });
 
@@ -11,7 +11,7 @@ function navegacionFija() {
   const section = document.querySelector(".section-1");
   // const aux = document.querySelector(".section-1");
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (section.getBoundingClientRect().top < 0) {
       // header.classList.add("fixed");
       // aux.classList.add("padding");
@@ -26,3 +26,6 @@ function navegacionFija() {
   });
 }
 // se han comentado varias partes del .js al descubrir que el padding era el que causaba el salto de la barra de navegación al hacer scroll.
+
+
+
