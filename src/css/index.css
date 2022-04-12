@@ -732,7 +732,7 @@ li {
   }
 }
 
-@media (min-width: 0) and (max-width: px) {
+@media (min-width: 0) and (max-width: 600px) {
   .footer {
     height: 30rem;
   }
