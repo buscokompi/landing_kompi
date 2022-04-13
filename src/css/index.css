@@ -464,42 +464,56 @@ li {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
   background-color: #3f3d3b;
-  height: 45vh;
+  height: 20vh;
 }
 
 .information {
   display: flex;
-  margin-top: 4%;
+  margin-top: 2rem;
   justify-content: space-around;
+  padding-bottom: 2rem;
 }
 
 .about-us {
   display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 35vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 10%;
   font-family: var(--text-font);
 }
 
-/* .space {
-  width: 40%;
-} */
+.about-us a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 
 .rrss {
   filter: invert();
   height: 2.5rem;
+  width: 1.7rem;
 }
 
-.about-us h5 {
-  color: var(--white-color);
-  font-size: 0.9rem;
-}
 
 .social-media {
   display: flex;
-  justify-content: space-evenly;
-  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  height: 10%;
+  padding-right: 2rem;
+}
+
+
+
+@media (max-width:768px){
+  .social-media{
+    padding-top: 2rem;
+  }
 }
 
 .copyright {
@@ -507,6 +521,7 @@ li {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
   height: 1vh;
 }
 
@@ -656,9 +671,9 @@ li {
     font-size: 3em;
   }
 
-  .footer {
+  /* .footer {
     height: 45vh;
-  }
+  } */
 
   .about-us {
     height: 35vh;
@@ -671,13 +686,13 @@ li {
 
 /* para pantallas medianas */
 @media (min-width: 690px) {
-  .footer {
+  /* .footer {
     height: 45vh;
-  }
+  } */
 
-  .about-us {
+  /* .about-us {
     height: 25vh;
-  }
+  } */
 
   .copyright {
     margin-top: 8%;
@@ -710,17 +725,17 @@ li {
     /* width: 80%; media query  */
   }
 
-  .footer {
+  /* .footer {
     height: 35vh;
-  }
+  } */
 
-  .about-us {
+  /* .about-us {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 24vh;
     font-family: var(--text-font);
-  }
+  } */
 
   .copyright {
     margin-top: 0;
