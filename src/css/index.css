@@ -316,6 +316,7 @@ li {
   justify-content: space-around;
   justify-items: center;
   margin: 3% 15%;
+  gap: 2rem;
 }
 
 .grid-container {
@@ -329,6 +330,13 @@ li {
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.7s, filter 0.6s ease-in-out, border-radius 0.7s;
+}
+
+@media (max-width:768px){
+  .grid-container {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 .grid-container img {
