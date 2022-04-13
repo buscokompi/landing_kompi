@@ -332,13 +332,6 @@ li {
   transition: transform 0.7s, filter 0.6s ease-in-out, border-radius 0.7s;
 }
 
-@media (max-width:768px){
-  .grid-container {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-
 .grid-container img {
   width: auto;
   height: 100%;
@@ -731,5 +724,13 @@ li {
 
   .copyright {
     margin-top: 0;
+  }
+}
+
+
+@media (max-width:768px){
+  .grid-container {
+    width: 10rem;
+    height: 10rem;
   }
 }
