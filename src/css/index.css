@@ -496,6 +496,10 @@ li {
   font-size: 0.9rem;
 }
 
+.about-us p{
+  color: var(--white-color);
+}
+
 .social-media {
   display: flex;
   justify-content: space-evenly;
@@ -513,6 +517,12 @@ li {
 .copyright hr {
   background-color: grey;
   width: 70%;
+}
+
+.copyright p{
+  color: var(--white-color);
+  font-family: var(--text-font);
+  font-size: 0.8rem;
 }
 
 /* --- Buttons --- */
