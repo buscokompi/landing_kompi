@@ -7,7 +7,7 @@ module.exports = {
   mode,
   publicDir: "../public",
   build: {
-    outDir: "./src/",
+    outDir: "../dist",
     assetsDir: "./"
   }
 };
