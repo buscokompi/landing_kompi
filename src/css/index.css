@@ -464,24 +464,24 @@ li {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: space-between;
   background-color: #3f3d3b;
-  height: 20vh;
+  height: auto;
 }
 
 .information {
   display: flex;
-  margin-top: 2rem;
-  justify-content: space-around;
-  padding-bottom: 2rem;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 
 .about-us {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
+  justify-content: center;
+  gap: 3rem;
+  width: 70%;
   height: 10%;
   font-family: var(--text-font);
 }
@@ -491,24 +491,24 @@ li {
   color: var(--white-color);
 }
 
+.social-media {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  gap: 5rem;
+}
+
+.kompilogo {
+  width: 7rem;
+  object-fit: contain;
+  margin-right: 5rem;
+}
+
 
 .rrss {
   filter: invert();
-  height: 2.5rem;
-  width: 1.7rem;
+  height: 1.5rem;
 }
-
-
-.social-media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 15%;
-  height: 10%;
-  padding-right: 2rem;
-}
-
-
 
 @media (max-width:768px){
   .social-media{
@@ -527,7 +527,13 @@ li {
 
 .copyright hr {
   background-color: grey;
-  width: 70%;
+  width: 65%;
+}
+
+.copyright p{
+  color: var(--white-color);
+  font-family: var(--text-font);
+  margin-bottom: 5rem;
 }
 
 /* --- Buttons --- */
