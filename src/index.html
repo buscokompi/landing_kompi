@@ -7,21 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopta un Kompi</title>
     <link rel="icon" href="./assets/icons/Icono_logo.svg">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!--Font-Family: Dosis -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap" rel="stylesheet">
+    <!--Font-Family: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,500&display=swap" rel="stylesheet">
+    <!--Font-Family: Open Sans and Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!--WARNING: deberiamos poner todo el js en index.js o si acaso dividir en otro archivo solo las funciones e importarlas en el otro js-->
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/imageblur.js"></script>
+    <script type="module" src="./js/titlekompi.js"></script>
+
 </head>
 
 <body>
     <header class="topbar">
-        <div class="topbar-logo"> <!-- no hace falta -->
-            <a href="#">
-                <img class="kompi-logo" src="assets/icons/kompi_logo.png" alt="Logo">
-            </a>
-        </div>
+        <a href="index.html">
+            <img class="kompi-logo" src="assets/icons/kompi_logo.png" alt="Logo">
+        </a>
         <nav class="navegation">
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label> <!-- WARNING: las clases fa, fa-bars no existen-->
             <ul>
+                <!-- WARNING: Creo que deberia ir primero el <li> y dentro el <a> -->
                 <a href="#anchorservices">
                     <li>Servicios</li>
                 </a>
@@ -45,12 +56,10 @@
                     Adopta gratis y fácilmente a tu próxima mascota
                 </p>
             </div>
-            <div class="container-button">
-                <a class="button" href="./404file.html"> <span>Adopta</span></a>
-            </div>
+            <a class="button" href="./404file.html"><span>Adopta</span></a>
         </div>
     </section>
-    <!-- <div id="anchorservices"></div> -->
+
     <section class="section-2" id="anchorservices">
         <div class="paw-print">
             <img src="./assets/icons/Icono_logo.svg" alt="logo kompi">
@@ -61,10 +70,9 @@
         </div>
         <div class="services">
             <div class="services-card">
-                <div class="img-services"> <!-- no hace falta -->
-                    <img class="img-section-2" src="./assets/icons/icono_busca.svg" alt="lupa de busqueda en pagina web">
-                </div>
+                <img class="img-section-2" src="./assets/icons/icono_busca.svg" alt="imagen lupa de busqueda">
                 <h3>BUSCA</h3>
+
                 <div class="text-services">
                     <p class="text-content">Con Kompi es fácil encontrar al perro o gato que buscas.
                     Simplemente pulsa el botón “Adopta” e ingresa tu código
@@ -72,10 +80,9 @@
                 </div>
             </div>
             <div class="services-card">
-                <div class="img-services">
-                    <img class="img-section-2" src="./assets/icons/icono_encuentra.svg" alt="resultado de la busqueda en la pagina web">
-                </div>
+                <img class="img-section-2" src="./assets/icons/icono_encuentra.svg" alt="imagen resultado de la busqueda">
                 <h3>ENCUENTRA</h3>
+
                 <div class="text-services">
                     <p class="text-content">Una vez que encuentres a tu próxima mascota haz click
                         en “Adóptame” para obtener información de contacto de
@@ -83,10 +90,9 @@
                 </div>
             </div>
             <div class="services-card">
-                <div class="img-services">
-                    <img class="img-section-2" src="./assets/icons/icono_adopta.svg" alt="seguridad en un intercambio">
-                </div>
+                <img class="img-section-2" src="./assets/icons/icono_adopta.svg" alt="imagen seguridad en un intercambio">
                 <h3>ADOPTA</h3>
+
                 <div class="text-services">
                     <p class="text-content">El centro de rescate, refugio u hogar actual le guiará a través del proceso de adopción.
                         Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia.</p>
@@ -99,7 +105,7 @@
     </section>
 
     <section class="section-3" id="anchoranimals">
-        <div class="background">
+        <div class="section-3-container">
             <div class="section-3-text">
                 <h2>Nuestros Kompis</h2>
                 <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies. Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y gratuita</strong> de animales en España. Kompi registra y verifica previamente al animal y a su propietario actual. Mostrándote y filtrando resultados por intereses. Así como <u>asesorándote en todo el proceso de adopción</u>.</p>
@@ -144,10 +150,9 @@
 
     <section class="section-4" id="anchoradoptar">
         <img class="union-paw" src="./assets/icons/huella_seccion3.svg" alt="huella fondo de pantalla">
-        <div class="reviews-text">
-            <h2>Si ganas tú, ganamos todos</h2>
-        </div>
-        <figure class="review-cards mt-3">
+        <h2 class="reviews-text">Si ganas tú, ganamos todos</h2>
+
+        <figure class="review-cards">
             <div class="review-cards-content">
                 <div class="review-cards-item"><img class="busca-img" src="./assets/images/review1.png"
                         alt="vector_encuentra_en_kompi" sizes=""></div>
@@ -193,11 +198,5 @@
         </div>
 
     </footer>
-
-    <script type="module" src="./js/index.js"></script>
-    <script type="module" src="./js/imageblur.js"></script>
-    <script type="module" src="./js/titlekompi.js"></script>
-
 </body>
-
 </html>

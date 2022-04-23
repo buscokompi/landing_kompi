@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap%27");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap%27");
-
 :root {
   --primary-color: #f9b225;
   --secondary-color: #ffe194;
@@ -8,6 +5,8 @@
   --terciary2-color: #c83e4d;
   --dark-color: #3f3d3b;
   --white-color: #fff;
+
+  /* IMPROVE: Recomiendo poner mas fuentes como alternativas (al menos 3) */
   --title-font: "Dosis", sans-serif;
   --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
@@ -22,29 +21,20 @@ html {
 body,
 h1 {
   margin: 0;
-  width: 100%;
 }
-
-/**  HEADER & Section 0 **/
-
-/* .fixed {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background-color: rgb(0 0 0 / 0%);
-}
-
-.padding {
-  padding-top: 110px;
-} */
 
 .kompi-logo {
   width: 10rem;
+  padding-left: 7.4rem;
 }
 
-.topbar-logo a {
-  padding-left: 7.4rem;
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
 }
 
 .navegation a {
@@ -65,12 +55,12 @@ h1 {
 }
 
 .topbar {
+  width: 100%;
   height: 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  width: 100%;
   z-index: 5;
   position: fixed;
 }
@@ -106,15 +96,6 @@ h1 {
   display: none;
 }
 
-ul {
-  display: flex;
-  gap: 2rem;
-}
-
-li {
-  list-style: none;
-}
-
 /**  SECTION-1  **/
 .section-1 {
   background-image: url("../assets/images/imgDogs2.jpg");
@@ -135,12 +116,11 @@ li {
   align-items: center;
   text-align: center;
   color: var(--white-color);
-  margin: 0;
-  padding: 0;
 }
 
 .container h1 {
   font-family: var(--title-font);
+  font-weight: 800; /* IMPROVE: Recomiendo cambiarloa  600 pero debemos importarlo previeamente en el html */
   font-size: 6rem;
   margin-top: 8rem;
 }
@@ -151,8 +131,9 @@ li {
 }
 
 .container-text {
-  width: 100vw;
-  height: 7rem;
+  width: 100%;
+  height: 2rem;
+  padding-bottom: 5rem;
 }
 
 .container-text p {
@@ -172,7 +153,7 @@ li {
 }
 
 .paw-print {
-  margin-top: 7%;
+  margin-top: 5rem;
   align-self: center;
 }
 
@@ -182,7 +163,6 @@ li {
 
 .text-slogan h2 {
   margin-top: 1rem;
-  margin-bottom: 0;
   text-align: center;
   font-family: var(--title-font);
   color: var(--primary-color);
@@ -217,7 +197,7 @@ li {
   padding: 3rem;
   width: 13rem;
   height: 22rem;
-  margin: 2%;
+  margin: 2rem;
 }
 
 .text-services {
@@ -225,17 +205,9 @@ li {
   text-align: center;
 }
 
-/* .img-services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-} */
-
 .img-section-2 {
   width: 100%;
-  height: 15vh;
+  height: 6.5rem;
   object-fit: fill;
 }
 
@@ -244,8 +216,8 @@ li {
   color: var(--dark-color);
   font-size: 1.25rem;
   font-weight: 600;
-  margin-top: 10%;
-  margin-bottom: 4%;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .text-content {
@@ -253,8 +225,7 @@ li {
   color: var(--dark-color);
   font-size: 1rem;
   line-height: 1.25rem;
-  padding: 0 1%;
-  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .services-card:hover {
@@ -268,18 +239,18 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
-}
-
-.background {
   background-image: url("../assets/images/fondo_seccion3_5.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 1.9rem;
   width: 100%;
   min-height: 100vh;
   z-index: 0;
+}
+
+.section-3-container {
+  height: 100%;
+  margin: 0 5rem;
 }
 
 .section-3-text {
@@ -287,17 +258,14 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 16%;
-  margin-top: 2%;
-  width: 80%;
+  padding-left: 2rem;
+  padding-top: 8rem;
 }
 
 .section-3-text h2 {
   font-family: var(--title-font);
   color: var(--white-color);
   font-size: 2.25rem;
-  margin-top: 35%;
-  margin-bottom: 3%;
 }
 
 .section-3-text p {
@@ -306,7 +274,6 @@ li {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.6rem;
-  margin-bottom: 0;
   width: 40.7rem;
 }
 
@@ -315,7 +282,6 @@ li {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   justify-items: center;
-  margin: 3% 15%;
   gap: 2rem;
 }
 
@@ -325,7 +291,7 @@ li {
   align-items: center;
   width: 13.75rem;
   height: 13.75rem;
-  margin: 15%;
+  margin: 15%; /* WARNING: Cambiar % a rem */
   box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
   border-radius: 50%;
   overflow: hidden;
@@ -351,6 +317,7 @@ li {
 
 /* Cards Carousel */
 .section-4 {
+  /* WARNING: Peligroso utilizar aqui el height 100%, deberiamos darle un valor concreto */
   width: 100%;
   height: 100%;
   display: flex;
@@ -366,7 +333,7 @@ li {
   margin-top: -0.19rem;
 }
 
-.reviews-text h2 {
+.reviews-text {
   margin-top: 2rem;
   font-family: var(--title-font);
   color: var(--dark-color);
@@ -376,11 +343,11 @@ li {
 
 .review-cards {
   position: relative;
-  width: 60vw;
-  height: 40vw;
+  width: 60vw; /* WARNING: Cambiar vw a rem */
+  height: 40vw; /* WARNING: Cambiar vw(que, por cierto, deberia ser vh) a rem */
   max-width: 23.75rem;
   max-height: 15.63rem;
-  margin: 0;
+  margin: 0; /* WARNING: ¿Es necesario? */
   color: white;
   perspective: 62.5rem;
   transform-origin: center;
@@ -410,8 +377,8 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 60vw;
-  height: 40vw;
+  width: 60vw; /* WARNING: Cambiar vw a rem */
+  height: 40vw; /* WARNING: Cambiar vw(que, por cierto, deberia ser vh) a rem */
   max-width: 23.75rem;
   max-height: 15.63rem;
   box-shadow: 0 0.3rem 1.25rem rgb(0 0 0 / 5%);
@@ -420,19 +387,16 @@ li {
 }
 
 .review-cards-item:nth-child(1) {
-  /* background: #fdd94f; */
   background: white;
   transform: rotateY(0) translateZ(35vw);
 }
 
 .review-cards-item:nth-child(2) {
-  /* background: #f87949; */
   background: white;
   transform: rotateY(120deg) translateZ(35vw);
 }
 
 .review-cards-item:nth-child(3) {
-  /* background: #fbab48; */
   background: white;
   transform: rotateY(240deg) translateZ(35vw);
 }
@@ -481,6 +445,8 @@ li {
   display: flex;
   justify-content: center;
   gap: 3rem;
+
+  /* WARNING: Revisar y comprobar si podemos ponerlos con rem */
   width: 70%;
   height: 10%;
   font-family: var(--text-font);
@@ -504,14 +470,13 @@ li {
   margin-right: 5rem;
 }
 
-
 .rrss {
   filter: invert();
   height: 1.5rem;
 }
 
-@media (max-width:768px){
-  .social-media{
+@media (max-width: 768px) {
+  .social-media {
     padding-top: 2rem;
   }
 }
@@ -522,7 +487,7 @@ li {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 1vh;
+  height: 1vh; /* WARNING: Cambiar vh a rem */
 }
 
 .copyright hr {
@@ -530,7 +495,7 @@ li {
   width: 65%;
 }
 
-.copyright p{
+.copyright p {
   color: var(--white-color);
   font-family: var(--text-font);
   margin-bottom: 5rem;
@@ -578,7 +543,7 @@ li {
 }
 
 .btnsection2 {
-  margin: 2.5% 0 5%;
+  margin: 2rem 0 4rem;
 }
 
 .container-btn-section3 {
@@ -586,6 +551,7 @@ li {
   align-items: center;
   flex-direction: column;
   margin-bottom: 8rem;
+  padding-top: 5rem;
 }
 
 .btn-section3 {
@@ -633,10 +599,12 @@ li {
 }
 
 .btnsection4 {
-  margin: 7% 0;
+  margin: 5rem 0;
 }
 
 /* ----------------- */
+
+/* WARNING: Deberiamos dividor en varios media querys cada clase */
 @media (min-width: 0) and (max-width: 1199px) {
   .navegation {
     width: 100%;
@@ -674,36 +642,17 @@ li {
   }
 
   .menu-icon i {
-    font-size: 3em;
+    font-size: 3em; /* WARNING: Cambiar em a rem */
   }
 
-  /*.footer {
-    height: 45vh;
-  }*/
-
   .about-us {
-    height: 35vh;
+    height: 35vh; /* WARNING: Cambiar vh a rem */
   }
 
   .copyright {
     margin-top: 6%;
   }
 }
-
-/* para pantallas medianas */
-/*@media (min-width: 690px) {
-  .footer {
-    height: 45vh;
-  }
-
-  .about-us {
-    height: 25vh;
-  }
-
-  .copyright {
-    margin-top: 8%;
-  }
-}*/
 
 /* para pantallas largas */
 @media (min-width: 1200px) {
@@ -717,7 +666,7 @@ li {
   }
 
   .services-card {
-    width: 15%;
+    width: 15%; /* WARNING: Cambiar % a rem */
   }
 
   .grid {
@@ -725,34 +674,14 @@ li {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .section-3-text {
+  /* .section-3-text {
     width: 30%;
+  } */
 
-    /* width: 80%; media query  */
+  @media (max-width: 768px) {
+    .grid-container {
+      width: 10rem;
+      height: 10rem;
+    }
   }
-
-  /*.footer {
-    height: 35vh;
-  }
-
-  .about-us {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 24vh;
-    font-family: var(--text-font);
-  }
-
-  .copyright {
-    margin-top: 0;
-  }
-}*/
-
-
-@media (max-width:768px){
-  .grid-container {
-    width: 10rem;
-    height: 10rem;
-  }
-}
 }
