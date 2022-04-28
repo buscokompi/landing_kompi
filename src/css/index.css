@@ -278,7 +278,7 @@ li {
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 1rem;
-  padding-top: 8rem;
+  padding-top: 12rem;
 }
 
 .section-3-text h2 {
@@ -292,8 +292,8 @@ li {
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.6rem;
   width: 25rem;
+  margin-bottom: 5rem;
 }
 
 .grid {
