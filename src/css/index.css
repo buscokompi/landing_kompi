@@ -9,7 +9,6 @@
 
   /* IMPROVE: Recomiendo poner mas fuentes como alternativas (al menos 3) */
   --title-font: "Dosis", sans-serif;
-  --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
 }
 
@@ -31,7 +30,7 @@ h1 {
 
 ul {
   display: flex;
-  gap: 0.4rem;
+  margin-right: 7rem;
 }
 
 li {
@@ -40,15 +39,15 @@ li {
 }
 
 .navegation a {
-  color: var(--dark-color);
+  color: var(--white-color);
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .navegation a:last-of-type {
-  padding-right: 9rem;
+  padding-right: 3rem;
 }
 
 .navegation a:hover {
@@ -82,7 +81,7 @@ li {
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: color 1s;
 }
 
@@ -141,7 +140,7 @@ li {
 .container h1 {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 
 .txt-rotate {
@@ -323,7 +322,7 @@ li {
 .grid-container picture {
   width: auto;
   height: 100%;
-  filter: blur(0.25rem) brightness(50%);
+  filter: brightness(60%);
 }
 
 .grid-container picture:hover {
@@ -335,7 +334,8 @@ li {
   height: 100%;
 }
 
-.pepe {
+.pets-name {
+  font-family: var(--text-font);
   font-size: 1.8rem;
   position: absolute;
   color: white;
