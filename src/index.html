@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopta un Kompi</title>
+    <meta name="description"
+        content="El portal de confianza para la adopción gratuita de animales en España. Busca el más próximo a ti y adopta fácilmente a tu nueva mascota.">
+    <title>Kompi | Buscador de animales</title>
     <link rel="icon" href="./assets/icons/Icono_logo.svg">
     <link rel="stylesheet" href="./css/index.css">
     <!--Font-Family: Dosis -->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap" rel="stylesheet">
-    <!--Font-Family: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,800;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap" rel="stylesheet">
     <!--Font-Family: Open Sans and Lato -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <!--WARNING: deberiamos poner todo el js en index.js o si acaso dividir en otro archivo solo las funciones e importarlas en el otro js-->
 
@@ -30,27 +31,29 @@
         </a>
         <nav class="navegation">
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label> <!-- WARNING: las clases fa, fa-bars no existen-->
+            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <!-- WARNING: las clases fa, fa-bars no existen-->
             <ul>
                 <!-- WARNING: Creo que deberia ir primero el <li> y dentro el <a> -->
-                <a href="#anchorservices">
-                    <li>Servicios</li>
-                </a>
-                <a href="#anchoranimals">
-                    <li>Nuestros kompis</li>
-                </a>
-                <a href="#anchoradoptar">
-                    <li>Testimonios</li>
-                </a>
+
+                <li><a href="#anchorservices">Servicios</a></li>
+
+                <li><a href="#anchoranimals">Nuestros kompis</a> </li>
+
+                <li><a href="#anchoradoptar">Testimonios</a></li>
+            
             </ul>
         </nav>
     </header>
 
     <section class="section-1">
         <div class="container">
-            <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
-            </h1>
+            <div class="background-h1">
+                <img src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador">
+                <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
+                </h1>
+            </div>
             <div class="container-text">
                 <p>
                     Adopta gratis y fácilmente a tu próxima mascota
@@ -75,12 +78,13 @@
 
                 <div class="text-services">
                     <p class="text-content">Con Kompi es fácil encontrar al perro o gato que buscas.
-                    Simplemente pulsa el botón “Adopta” e ingresa tu código
-                    postal para comenzar la búsqueda.</p>
+                        Simplemente pulsa el botón “Adopta” e ingresa tu código
+                        postal para comenzar la búsqueda.</p>
                 </div>
             </div>
             <div class="services-card">
-                <img class="img-section-2" src="./assets/icons/icono_encuentra.svg" alt="imagen resultado de la busqueda">
+                <img class="img-section-2" src="./assets/icons/icono_encuentra.svg"
+                    alt="imagen resultado de la busqueda">
                 <h3>ENCUENTRA</h3>
 
                 <div class="text-services">
@@ -90,11 +94,13 @@
                 </div>
             </div>
             <div class="services-card">
-                <img class="img-section-2" src="./assets/icons/icono_adopta.svg" alt="imagen seguridad en un intercambio">
+                <img class="img-section-2" src="./assets/icons/icono_adopta.svg"
+                    alt="imagen seguridad en un intercambio">
                 <h3>ADOPTA</h3>
 
                 <div class="text-services">
-                    <p class="text-content">El centro de rescate, refugio u hogar actual le guiará a través del proceso de adopción.
+                    <p class="text-content">El centro de rescate, refugio u hogar actual le guiará a través del proceso
+                        de adopción.
                         Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia.</p>
                 </div>
             </div>
@@ -108,15 +114,22 @@
         <div class="section-3-container">
             <div class="section-3-text">
                 <h2>Nuestros Kompis</h2>
-                <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies. Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y gratuita</strong> de animales en España. Kompi registra y verifica previamente al animal y a su propietario actual. Mostrándote y filtrando resultados por intereses. Así como <u>asesorándote en todo el proceso de adopción</u>.</p>
+                <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies.
+                    Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y gratuita</strong> de
+                    animales en España. Kompi registra y verifica previamente al animal y a su propietario actual.
+                    Mostrándote y filtrando resultados por intereses. Así como asesorándote en todo el proceso de
+                    adopción.</p>
             </div>
             <div class="grid">
                 <div class="grid-container">
                     <picture>
-                        <source srcset="./assets/images/galleryAnimals/imgBracoWeimar.webp" alt="imagen perro braco de weimar">
-                        <source srcset="./assets/images/galleryAnimals/imgBracoWeimar.jpg" alt="imagen perro braco de weimar">
+                        <source srcset="./assets/images/galleryAnimals/imgBracoWeimar.webp"
+                            alt="imagen perro braco de weimar">
+                        <source srcset="./assets/images/galleryAnimals/imgBracoWeimar.jpg"
+                            alt="imagen perro braco de weimar">
                         <img src="./assets/images/galleryAnimals/imgBracoWeimar.jpg" alt="imagen perro braco de weimar">
                     </picture>
+                    <p class="pepe">Maia</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -124,6 +137,7 @@
                         <source src="./assets/images/galleryAnimals/imgRabbit.jpg" alt="imagen conejo gris">
                         <img src="./assets/images/galleryAnimals/imgRabbit.jpg" alt="imagen conejo gris">
                     </picture>
+                    <p class="pepe">Lolo</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -131,13 +145,17 @@
                         <source src="./assets/images/galleryAnimals/imgGreyCat.jpg" alt="imagen gato gris">
                         <img src="./assets/images/galleryAnimals/imgGreyCat.jpg" alt="imagen gato gris">
                     </picture>
+                    <p class="pepe">Nia</p>
                 </div>
                 <div class="grid-container">
                     <picture>
-                        <source src="./assets/images/galleryAnimals/imgBorderCollie.webp" alt="imagen perro border collie">
-                        <source src="./assets/images/galleryAnimals/imgBorderCollie.jpg" alt="imagen perro border collie">
+                        <source src="./assets/images/galleryAnimals/imgBorderCollie.webp"
+                            alt="imagen perro border collie">
+                        <source src="./assets/images/galleryAnimals/imgBorderCollie.jpg"
+                            alt="imagen perro border collie">
                         <img src="./assets/images/galleryAnimals/imgBorderCollie.jpg" alt="imagen perro border collie">
                     </picture>
+                    <p class="pepe">Lana</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -145,6 +163,7 @@
                         <source src="./assets/images/galleryAnimals/imgHusky.jpg" alt="imagen perro husky">
                         <img src="./assets/images/galleryAnimals/imgHusky.jpg" alt="imagen perro husky">
                     </picture>
+                    <p class="pepe">Balto</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -152,6 +171,7 @@
                         <source src="./assets/images/galleryAnimals/imgWhiteCat.jpg" alt="imagen gato blanco">
                         <img src="./assets/images/galleryAnimals/imgWhiteCat.jpg" alt="imagen gato blanco">
                     </picture>
+                    <p class="pepe">Tai</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -159,6 +179,7 @@
                         <source src="./assets/images/galleryAnimals/imgPitbull.jpg" alt="imagen perro pitbull">
                         <img src="./assets/images/galleryAnimals/imgPitbull.jpg" alt="imagen perro pitbull">
                     </picture>
+                    <p class="pepe">Pisco</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -166,6 +187,7 @@
                         <source src="./assets/images/galleryAnimals/imgSleapingCat.jpg" alt="imagen gato gris dormido">
                         <img src="./assets/images/galleryAnimals/imgSleapingCat.jpg" alt="imagen gato gris dormido">
                     </picture>
+                    <p class="pepe">Coco</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -173,6 +195,7 @@
                         <source src="./assets/images/galleryAnimals/imgHamster.jpg" alt="imagen hamster blanco">
                         <img src="./assets/images/galleryAnimals/imgHamster.jpg" alt="imagen hamster blanco">
                     </picture>
+                    <p class="pepe">Gus</p>
                 </div>
                 <div class="grid-container">
                     <picture>
@@ -180,6 +203,7 @@
                         <source src="./assets/images/galleryAnimals/imgYorkshire.jpg" alt="imagen perro yorkshire">
                         <img src="./assets/images/galleryAnimals/imgYorkshire.jpg" alt="imagen perro yorkshire">
                     </picture>
+                    <p class="pepe">Chico</p>
                 </div>
             </div>
             <div class="container-btn-section3">
@@ -254,4 +278,5 @@
 
     </footer>
 </body>
+
 </html>

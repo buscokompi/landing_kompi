@@ -9,8 +9,10 @@ function hoverimages(image) {
   for (let i = 0; i < imagenes.length; i++) {
     imagenes[i].classList.add("blur");
   }
+  image.classList.remove("pepe");
   image.classList.add("zoom");
   image.classList.remove("blur");
+  
 }
 
 function hoverout() {
