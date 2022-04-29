@@ -9,7 +9,6 @@
 
   /* IMPROVE: Recomiendo poner mas fuentes como alternativas (al menos 3) */
   --title-font: "Dosis", sans-serif;
-  --subtitle-font: "Poppins", sans-serif;
   --text-font: "Open Sans", sans-serif;
 }
 
@@ -25,13 +24,13 @@ h1 {
 }
 
 .kompi-logo {
+  content: url("../assets/icons/logo_versioncolor.png");
   width: 7rem;
   padding-left: 4.4rem;
 }
 
 ul {
-  display: flex;
-  gap: 0.4rem;
+  display: none;
 }
 
 li {
@@ -40,15 +39,15 @@ li {
 }
 
 .navegation a {
-  color: var(--dark-color);
+  color: var(--white-color);
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .navegation a:last-of-type {
-  padding-right: 9rem;
+  padding-right: 3rem;
 }
 
 .navegation a:hover {
@@ -82,7 +81,7 @@ li {
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: color 1s;
 }
 
@@ -100,7 +99,7 @@ li {
 
 /**  SECTION-1  **/
 .section-1 {
-  background-image: url("../assets/images/imgDogs2.jpg");
+  background-image: url("../assets/images/fondo_landing.svg");
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
@@ -141,7 +140,7 @@ li {
 .container h1 {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 
 .txt-rotate {
@@ -270,22 +269,22 @@ li {
 
 .section-3-container {
   height: 100%;
-  margin: 0 4.5rem;
+  margin: 0 1.5rem;
 }
 
 .section-3-text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 1rem;
-  padding-top: 8rem;
+  align-items: center;
+  margin-left: 1px;
+  margin-top: 30rem;
 }
 
 .section-3-text h2 {
   font-family: var(--title-font);
   color: var(--dark-color);
   font-size: 2.25rem;
+
 }
 
 .section-3-text p {
@@ -293,13 +292,14 @@ li {
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.6rem;
-  width: 25rem;
+  width: 20rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: space-around;
   justify-items: center;
   margin: 0 2rem;
@@ -309,52 +309,93 @@ li {
 .grid-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 16rem;
-  height: 16rem;
+  align-items: flex-end;
+  width: 17rem;
+  height: 17rem;
   margin: 1rem;
-  /* WARNING: Cambiar % a rem */
   box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.7s, filter 0.6s ease-in-out, border-radius 0.7s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.grid-container picture {
-  width: auto;
-  height: 100%;
-  filter: blur(0.25rem) brightness(50%);
+/* IMAGENES DE LA GALERIA DE ANIMALES */
+.img-braco-weimar {
+  background-image: url("../assets/images/galleryAnimals/imgBracoWeimar.svg");
 }
 
-.grid-container picture:hover {
-  filter: none;
+.img-rabbit {
+  background-image: url("../assets/images/galleryAnimals/imgRabbit.svg");
 }
 
-.grid-container img {
-  width: auto;
-  height: 100%;
+.img-grey-cat {
+  background-image: url("../assets/images/galleryAnimals/imgGreyCat.svg");
 }
 
-.pepe {
-  font-size: 1.8rem;
-  position: absolute;
-  color: white;
+.img-border-collie {
+  background-image: url("../assets/images/galleryAnimals/imgBorderCollie.svg");
 }
 
-.grid-container:hover > .pepe {
- visibility: hidden;
-  filter: none;
+.img-husky {
+  background-image: url("../assets/images/galleryAnimals/imgHusky.svg");
 }
 
-.zoom {
+.img-white-cat {
+  background-image: url("../assets/images/galleryAnimals/imgWhiteCat.svg");
+}
+
+.img-pitbull {
+  background-image: url("../assets/images/galleryAnimals/imgPitbull.svg");
+}
+
+.img-sleaping-cat {
+  background-image: url("../assets/images/galleryAnimals/imgSleapingCat.svg");
+}
+
+.img-hamster {
+  background-image: url("../assets/images/galleryAnimals/imgHamster.svg");
+}
+
+.img-yorkshire {
+  background-image: url("../assets/images/galleryAnimals/imgYorkshire.svg");
+}
+
+/*____________________________*/
+
+.grid-container:hover {
   transform: scale(1.6);
-  border-radius: 50%;
+  filter: none;
   z-index: 2;
 }
 
-/* .blur {
-  filter: blur(0.25rem) brightness(50%);
-} */
+.pet-name-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+  background-color: var(--white-color);
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
+  border-radius: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.pets-name {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: absolute;
+  color: var(--dark-color);
+}
+
+.grid-container:hover>.pet-name-container {
+  opacity: 0;
+  filter: none;
+}
 
 /* SECTION 4 */
 
@@ -652,7 +693,43 @@ li {
 /* ----------------- */
 
 /* WARNING: Deberiamos dividor en varios media querys cada clase */
-@media (min-width: 0) and (max-width: 1199px) {
+@media (min-width: 0) and (max-width: 767px) {
+  .kompi-logo {
+    padding-left: 3.0rem;
+  }
+
+  .background-h1 {
+    width: 25rem;
+  }
+
+  .container img {
+    padding-left: 1rem;
+    width: 2.5rem;
+  }
+
+  .container-text {
+    width: 20rem;
+  }
+
+  .container h1 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 2.3rem;
+  }
+
+  .text-slogan h2 {
+    font-size: 2.0rem;
+  }
+
+  .text-slogan h3 {
+    font-size: 1.0rem;
+  }
+
+  .container-text p {
+    font-size: 1.2rem;
+  }
+
+
   .navegation {
     width: 100%;
     height: 11.25rem;
@@ -684,8 +761,6 @@ li {
 
   #menu-toggle:checked~ul {
     max-height: 18.75rem;
-
-    /* Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width */
   }
 
   .menu-icon i {
@@ -693,14 +768,6 @@ li {
     /* WARNING: Cambiar em a rem */
   }
 
-  .about-us {
-    height: 35vh;
-    /* WARNING: Cambiar vh a rem */
-  }
-
-  .copyright {
-    margin-top: 6%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -709,6 +776,11 @@ li {
     height: 15rem;
   }
 
+  .section-3-text {
+    margin-top: 20rem;
+  }
+
+
   .section-3-text p {
     width: 40rem;
   }
@@ -716,6 +788,11 @@ li {
   .social-media {
     padding-top: 2rem;
   }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 /* para pantallas largas */
@@ -725,12 +802,18 @@ li {
   }
 
   .kompi-logo {
+    content: url("../assets/icons/kompi_logo.png");
     padding-left: 9.4rem;
   }
 
   .services {
     display: flex;
     flex-direction: row;
+  }
+
+  ul {
+    display: flex;
+    margin-right: 7rem;
   }
 
   .services-card {
@@ -740,10 +823,52 @@ li {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 5rem;
   }
 
+
+  .img-yorkshire {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+
   .section-3-text {
-    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+    margin-top: 15rem;
+  }
+
+  .section-3-text h2 {
+    font-family: var(--title-font);
+    color: var(--dark-color);
+    font-size: 2.25rem;
+
+  }
+
+  .section-3-text p {
+    color: var(--dark-color);
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 40rem;
+    margin-bottom: 5rem;
+    text-align: start;
+  }
+
+  @media (min-width: 1650px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    .img-yorkshire {
+      grid-area: 2 / 5 / 3 / 6;
+    }
+  
+
   }
 }
