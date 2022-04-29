@@ -734,13 +734,13 @@ li {
   .navegation {
     width: 100%;
     height: 11.25rem;
-  }*/
+  }
 
   .services-card {
     width: 15rem;
   }
 
-  /*.navegation ul {
+  .navegation ul {
     display: block;
     max-height: 0;
     overflow: hidden;
@@ -750,7 +750,7 @@ li {
     text-align: left;
     width: 100%;
     padding: 0.63rem 0 0.63rem 5%;
-  }*/
+  }
 
   .menu-icon {
     margin-top: 1.25rem;
