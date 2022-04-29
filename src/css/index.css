@@ -30,12 +30,7 @@ h1 {
 }
 
 ul {
-<<<<<<< HEAD
   display: none;
-=======
-  display: flex;
-  margin-right: 7rem;
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
 }
 
 li {
@@ -280,16 +275,9 @@ li {
 .section-3-text {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   align-items: center;
   margin-left: 1px;
   margin-top: 30rem;
-=======
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 1rem;
-  padding-top: 12rem;
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
 }
 
 .section-3-text h2 {
@@ -304,14 +292,9 @@ li {
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 1.25rem;
-<<<<<<< HEAD
   width: 20rem;
   margin-bottom: 5rem;
   text-align: center;
-=======
-  width: 25rem;
-  margin-bottom: 5rem;
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
 }
 
 .grid {
@@ -327,13 +310,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-<<<<<<< HEAD
   width: 17rem;
   height: 17rem;
-=======
-  width: 16rem;
-  height: 16rem;
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   margin: 1rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
   border-radius: 50%;
@@ -345,7 +323,6 @@ li {
 }
 
 /* IMAGENES DE LA GALERIA DE ANIMALES */
-<<<<<<< HEAD
 .img-braco-weimar {
   background-image: url("../assets/images/galleryAnimals/imgBracoWeimar.svg");
 }
@@ -383,65 +360,18 @@ li {
 }
 
 .img-yorkshire {
-=======
-.img-braco-weimar{
-  background-image: url("../assets/images/galleryAnimals/imgBracoWeimar.svg");
-}
-
-.img-rabbit{
-  background-image: url("../assets/images/galleryAnimals/imgRabbit.svg");
-}
-
-.img-grey-cat{
-  background-image: url("../assets/images/galleryAnimals/imgGreyCat.svg");
-}
-
-.img-border-collie{
-  background-image: url("../assets/images/galleryAnimals/imgBorderCollie.svg");
-}
-
-.img-husky{
-  background-image: url("../assets/images/galleryAnimals/imgHusky.svg");
-}
-
-.img-white-cat{
-  background-image: url("../assets/images/galleryAnimals/imgWhiteCat.svg");
-}
-
-.img-pitbull{
-  background-image: url("../assets/images/galleryAnimals/imgPitbull.svg");
-}
-
-.img-sleaping-cat{
-  background-image: url("../assets/images/galleryAnimals/imgSleapingCat.svg");
-}
-
-.img-hamster{
-  background-image: url("../assets/images/galleryAnimals/imgHamster.svg");
-}
-
-.img-yorkshire{
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   background-image: url("../assets/images/galleryAnimals/imgYorkshire.svg");
 }
 
 /*____________________________*/
 
-<<<<<<< HEAD
 .grid-container:hover {
-=======
-.grid-container:hover{
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   transform: scale(1.6);
   filter: none;
   z-index: 2;
 }
 
-<<<<<<< HEAD
 .pet-name-container {
-=======
-.pet-name-container{
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   display: flex;
   justify-content: center;
   width: 100%;
@@ -454,11 +384,7 @@ li {
   transition: opacity 0.5s;
 }
 
-<<<<<<< HEAD
 .pets-name {
-=======
-.pets-name{
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   font-family: var(--text-font);
   font-weight: 600;
   font-size: 1.2rem;
@@ -466,11 +392,7 @@ li {
   color: var(--dark-color);
 }
 
-<<<<<<< HEAD
 .grid-container:hover>.pet-name-container {
-=======
-.grid-container:hover > .pet-name-container {
->>>>>>> 3635a1136a3610b7ae232789c685adff20246f7a
   opacity: 0;
   filter: none;
 }
