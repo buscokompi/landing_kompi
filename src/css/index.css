@@ -341,7 +341,7 @@ li {
   color: white;
 }
 
-.grid-container:hover > .pepe {
+.grid-container:hover > .pets-name {
  visibility: hidden;
   filter: none;
 }
