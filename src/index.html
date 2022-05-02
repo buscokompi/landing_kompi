@@ -26,28 +26,29 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="assets/icons/kompi_logo.png" alt="Logo"></a>
+        <div class="menu-toggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#anchorservices">Servicios</a></li>
-            <li><a href="#anchoranimals">Nuestros kompis</a> </li>
-            <li><a href="#anchoradoptar">Testimonios</a></li>
+            <li><a href="#anchorservices" onclick="toggleMenu();">Servicios</a></li>
+            <li><a href="#anchoranimals" onclick="toggleMenu();">Nuestros kompis</a> </li>
+            <li><a href="#anchoradoptar" onclick="toggleMenu();">Testimonios</a></li>
         </ul>
     </header>
     <section class="section-1">
         <div class="container">
-            <!-- <div class="seeker"> -->
-            <!-- <img src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador" class=" seeker"> -->
-            <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
-            </h1>
+            <div class="seeker">
+                <img src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador" class=" seeker-img">
+                <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
+                </h1>
+            </div>
             <p>Adopta gratis y fácilmente a tu próxima mascota</p>
-            <a class="button" href="./404file.html">Adopta</a>
-            <!-- </div> -->
+            <a class="button" href="./404file.html"><span>Adopta</span></a>
         </div>
     </section>
 
 
-    <section class="section-2" id="services">
-        <div class="paw-print">
+    <section class="section-2" id="anchorservices">
+        <div class="title paw-print">
             <img src="./assets/icons/Icono_logo.svg" alt="logo kompi">
             <h2>La mejor forma de adoptar</h2>
             <p>Conoce más de nuestros servicios</p>
@@ -89,9 +90,8 @@
                 </div>
             </div>
         </div>
-        <a class="button" href="./404file.html">Adopta</a>
+        <a class="button" href="./404file.html"> <span>Adopta</span></a>
     </section>
-
     <section class="section-3" id="anchoranimals">
         <div class="section-3-container">
             <div class="section-3-text">
@@ -162,36 +162,27 @@
 
     <section class="section-4" id="anchoradoptar">
         <img class="union-paw" src="./assets/icons/huella_seccion3.svg" alt="huella fondo de pantalla">
-        <h2 class="reviews-text">Si ganas tú, ganamos todos</h2>
-
-        <figure class="review-cards">
-            <div class="review-cards-content">
-                <div class="review-cards-item">
-                    <picture class="busca-img">
-                        <source srcset="./assets/images/reviews/review1.webp" type="image/webp" sizes="400px 300px">
-                        <source srcset="./assets/images/reviews/review1.png">
-                        <img src="./assets/images/reviews/review1.png" alt="vector_encuentra_en_kompi">
-                    </picture>
-                </div>
-                <div class="review-cards-item">
-                    <picture class="busca-img">
-                        <source srcset="./assets/images/reviews/review2.webp" alt="vector_encuentra_en_kompi">
-                        <source srcset="./assets/images/reviews/review2.png" alt="vector_encuentra_en_kompi">
-                        <img src="./assets/images/reviews/review2.png" alt="vector_encuentra_en_kompi">
-                    </picture>
-                </div>
-                <div class="review-cards-item">
-                    <picture class="busca-img">
-                        <source srcset="./assets/images/reviews/review3.webp" alt="vector_encuentra_en_kompi">
-                        <source srcset="./assets/images/reviews/review3.png" alt="vector_encuentra_en_kompi">
-                        <img src="./assets/images/reviews/review3.png" alt="vector_encuentra_en_kompi">
-                    </picture>
-                </div>
-            </div>
-        </figure>
-        <div class="btnsection4">
-            <a class="button" href="./404file.html"> <span>Adopta</span></a>
+        <div class="title contact-title">
+            <h2 class="h2-text">Contáctanos</h2>
+            <p>Nuestra familia está conformada por +1000 Kompis de diferentes especies. </p>
         </div>
+        <div class="contact-form">
+            <h3>Enviar un mensaje</h3>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div class="input-box send-button">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+        <a class="button" href="./404file.html"> <span>Adopta</span></a>
+
     </section>
 
     <footer class="footer">
@@ -225,6 +216,19 @@
         </div>
 
     </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navigation = document.querySelector(".navigation");
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
