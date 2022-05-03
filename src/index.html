@@ -23,90 +23,76 @@
 
 </head>
 
+
+
 <body>
-    <header class="topbar">
-        <a href="index.html">
-            <img class="kompi-logo" src="assets/icons/kompi_logo.png" alt="Logo">
-        </a>
-        <nav class="navegation">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-            <!-- WARNING: las clases fa, fa-bars no existen-->
-            <ul>
-                <!-- WARNING: Creo que deberia ir primero el <li> y dentro el <a> -->
-
-                <li><a href="#anchorservices">Servicios</a></li>
-
-                <li><a href="#anchoranimals">Nuestros kompis</a> </li>
-
-                <li><a href="#anchoradoptar">Testimonios</a></li>
-
-            </ul>
-        </nav>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/icons/kompi_logo.png" alt="Logo"></a>
+        <div class="menu-toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#anchorservices" onclick="toggleMenu();">Servicios</a></li>
+            <li><a href="#anchoranimals" onclick="toggleMenu();">Nuestros kompis</a> </li>
+            <li><a href="#anchoradoptar" onclick="toggleMenu();">Testimonios</a></li>
+        </ul>
     </header>
-
     <section class="section-1">
         <div class="container">
-            <div class="background-h1">
-                <img class="lupa" src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador">
+            <div class="seeker">
+                <img src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador" class=" seeker-img">
                 <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
                         data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
                 </h1>
             </div>
-            <div class="container-text">
-                <p>
-                    Adopta gratis y fácilmente a tu próxima mascota
-                </p>
-            </div>
+            <h2>Adopta gratis y fácilmente a tu próxima mascota</h2>
             <a class="button" href="./404file.html"><span>Adopta</span></a>
         </div>
     </section>
 
+
     <section class="section-2" id="anchorservices">
-        <div class="paw-print">
+        <div class="title paw-print">
             <img src="./assets/icons/Icono_logo.svg" alt="logo kompi">
-        </div>
-        <div class="text-slogan">
             <h2>La mejor forma de adoptar</h2>
             <h3>Conoce más de nuestros servicios</h3>
         </div>
         <div class="services">
             <div class="services-card">
-                <img class="img-section-2" src="./assets/icons/icono_busca.svg" alt="imagen lupa de busqueda">
-                <h3>BUSCA</h3>
-
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_busca.svg" alt="imagen lupa de busqueda">
+                </div>
                 <div class="text-services">
-                    <p class="text-content">Con Kompi es fácil encontrar al perro o gato que buscas.
+                    <h4>BUSCA</h4>
+                    <p>Con Kompi es fácil encontrar al perro o gato que buscas.
                         Simplemente pulsa el botón “Adopta” e ingresa tu código
                         postal para comenzar la búsqueda.</p>
                 </div>
             </div>
             <div class="services-card">
-                <img class="img-section-2" src="./assets/icons/icono_encuentra.svg"
-                    alt="imagen resultado de la busqueda">
-                <h3>ENCUENTRA</h3>
-
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_encuentra.svg"
+                        alt="imagen resultado de la busqueda">
+                </div>
                 <div class="text-services">
-                    <p class="text-content">Una vez que encuentres a tu próxima mascota haz click
+                    <h4>ENCUENTRA</h4>
+                    <p>Una vez que encuentres a tu próxima mascota haz click
                         en “Adóptame” para obtener información de contacto de
                         su refugio, rescate u hogar actual.</p>
                 </div>
             </div>
             <div class="services-card">
-                <img class="img-section-2" src="./assets/icons/icono_adopta.svg"
-                    alt="imagen seguridad en un intercambio">
-                <h3>ADOPTA</h3>
-
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_adopta.svg"
+                        alt="imagen seguridad en un intercambio">
+                </div>
                 <div class="text-services">
-                    <p class="text-content">El centro de rescate, refugio u hogar actual le guiará a través del proceso
+                    <h4>ADOPTA</h4>
+                    <p>El centro de rescate, refugio u hogar actual le guiará a través del proceso
                         de adopción.
                         Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia.</p>
                 </div>
             </div>
         </div>
-        <div class="btnsection2">
-            <a class="button" href="./404file.html"> <span>Adopta</span></a>
-        </div>
+        <a class="button" href="./404file.html"> <span>Adopta</span></a>
     </section>
 
     <section class="section-3" id="anchoranimals">
@@ -114,41 +100,62 @@
             <div class="section-3-text">
                 <h2>Nuestros Kompis</h2>
                 <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies.
-                    Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y gratuita</strong> de
+                    Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y
+                        gratuita</strong> de
                     animales en España. Kompi registra y verifica previamente al animal y a su propietario actual.
                     Mostrándote y filtrando resultados por intereses. Así como asesorándote en todo el proceso de
                     adopción.</p>
             </div>
             <div class="grid">
                 <div class="grid-container img-braco-weimar">
-                    <div class="pet-name-container"><p class="pets-name">Duna</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Duna</p>
+                    </div>
                 </div>
                 <div class="grid-container img-rabbit">
-                    <div class="pet-name-container"><p class="pets-name">Lolo</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Lolo</p>
+                    </div>
                 </div>
                 <div class="grid-container img-grey-cat">
-                    <div class="pet-name-container"><p class="pets-name">Nia</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Nia</p>
+                    </div>
                 </div>
                 <div class="grid-container img-border-collie">
-                    <div class="pet-name-container"><p class="pets-name">Nala</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Nala</p>
+                    </div>
                 </div>
                 <div class="grid-container img-husky">
-                    <div class="pet-name-container"><p class="pets-name">Balto</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Balto</p>
+                    </div>
                 </div>
                 <div class="grid-container img-white-cat">
-                    <div class="pet-name-container"><p class="pets-name">Tai</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Tai</p>
+                    </div>
                 </div>
                 <div class="grid-container img-pitbull">
-                    <div class="pet-name-container"><p class="pets-name">Pisko</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Pisko</p>
+                    </div>
                 </div>
                 <div class="grid-container img-sleaping-cat">
-                    <div class="pet-name-container"><p class="pets-name">Coco</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Coco</p>
+                    </div>
                 </div>
                 <div class="grid-container img-hamster">
-                    <div class="pet-name-container"><p class="pets-name">Gus</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Gus</p>
+                    </div>
                 </div>
                 <div class="grid-container img-yorkshire">
-                    <div class="pet-name-container"><p class="pets-name">Chico</p></div>
+                    <div class="pet-name-container">
+                        <p class="pets-name">Chico</p>
+                    </div>
                 </div>
             </div>
             <div class="container-btn-section3">
@@ -222,6 +229,20 @@
         </div>
 
     </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navigation = document.querySelector(".navigation");
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
