@@ -28,11 +28,17 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="assets/icons/kompi_logo.png" alt="Logo"></a>
-        <div class="menu-toggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#anchorservices" onclick="toggleMenu();">Servicios</a></li>
-            <li><a href="#anchoranimals" onclick="toggleMenu();">Nuestros kompis</a> </li>
-            <li><a href="#anchoradoptar" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="#anchorservices">Servicios</a></li>
+            <li><a href="#anchoranimals">Nuestros kompis</a> </li>
+            <li><a href="#anchoradoptar">Testimonios</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuClick"></div>
+        <ul class="mobile-navigation">
+            <li><a href="#anchorservices" class="mobile-li">Servicios</a></li>
+            <li><a href="#anchoranimals" class="mobile-li">Nuestros kompis</a> </li>
+            <li><a href="#anchoradoptar" class="mobile-li">Testimonios</a></li>
+            <a href="./404file.html" class="menuButton"><span>Adopta</span></a>
         </ul>
     </header>
     <section class="section-1">
@@ -230,7 +236,7 @@
 
     </footer>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.addEventListener("scroll", function () {
             const header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
@@ -242,7 +248,7 @@
             menuToggle.classList.toggle("active");
             navigation.classList.toggle("active");
         }
-    </script>
+    </script> -->
 </body>
 
 </html>

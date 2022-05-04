@@ -26,3 +26,22 @@
 //   });
 // }
 // // se han comentado varias partes del .js al descubrir que el padding era el que causaba el salto de la barra de navegación al hacer scroll.
+
+window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+document.getElementById("menuClick").onclick = function () { toggleMenu(); };
+
+function toggleMenu() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".navigation");
+    const logo = document.querySelector(".logo");
+    const menuButton = document.querySelector(".menuButton");
+
+    menuToggle.classList.toggle("active");
+    navigation.classList.toggle("active");
+    logo.classList.toggle("active");
+    menuButton.classList.toggle("active");
+}

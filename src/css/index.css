@@ -12,6 +12,10 @@
   --text-font: "Open Sans", sans-serif;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   scroll-behavior: smooth;
   margin: 0;
@@ -50,7 +54,8 @@ p {
   width: 100%;
 }
 
-.button {
+.button,
+.menuButton.active {
   display: inline-flex;
   position: relative;
   padding: 0.8rem 2.8rem;
@@ -66,7 +71,8 @@ p {
   text-transform: uppercase;
 }
 
-.button::after {
+.button::after,
+.menuButton.active::after {
   position: absolute;
   width: 0.1rem;
   height: 0.1rem;
@@ -80,24 +86,21 @@ p {
   transition: 0.3s ease-in-out all;
 }
 
-.button:hover {
+.button:hover,
+.menuButton.active:hover {
   color: var(--white-color);
 }
 
-.button:hover::after {
+.button:hover::after,
+.menuButton.active:hover::after {
   transform: scale(200);
   background: var(--terciary-color);
 }
 
-.button span {
+.button span,
+.menuButton.active span {
   position: relative;
   z-index: 2;
-}
-
-.kompi-logo {
-  content: url("../assets/icons/logo_versioncolor.png");
-  width: 7rem;
-  padding-left: 4.4rem;
 }
 
 header {
@@ -106,8 +109,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 5;
-
-  /* padding: 1.5rem 6.5rem; */
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -117,9 +118,8 @@ header {
 
 header.sticky {
   background: var(--white-color);
-
-  /* padding: 0.8rem 8rem; */
-  box-shadow: 0 0.2rem 2rem rgb(0 0 0 / 5%);
+  transition: 1s ease;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
 }
 
 header .logo {
@@ -161,28 +161,48 @@ header.sticky .navigation li a:hover {
 }
 
 header .navigation.active {
-  width: 100%;
   height: 100%;
-  position: fixed;
-  top: -1rem;
+  width: 100%;
   left: 0;
+  top: 0;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: var(--white-color);
-  shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
-  transition: 1s ease;
+  touch-action: none;
 }
 
 header.sticky .menu-toggle {
   filter: invert(87%) sepia(20%) saturate(5465%) hue-rotate(340deg) brightness(101%) contrast(95%);
 }
 
+header .navigation.active li {
+  margin: 0;
+  padding: 0;
+}
+
 header .navigation.active li a {
   color: var(--primary-color);
   font-size: 2rem;
   font-weight: 700;
+  display: block;
+  margin: auto;
+}
+
+header .navigation.active li a:hover {
+  color: var(--terciary-color);
+}
+
+.logo.active {
+  position: relative;
+  content: url("../assets/icons/logo_versioncolor.png");
+  z-index: 10;
 }
 
 .menu-toggle {
@@ -205,6 +225,26 @@ header .navigation.active li a {
   background-position: center;
   filter: invert(87%) sepia(20%) saturate(5465%) hue-rotate(340deg) brightness(101%) contrast(95%);
   z-index: 2;
+}
+
+.menuButton {
+  display: none;
+}
+
+.menuButton.active {
+  position: relative;
+  top: 15rem;
+  margin-top: 5rem;
+}
+
+.menuButton.active {
+  position: relative;
+  top: 15rem;
+  margin-top: 5rem;
+}
+
+.mobile-navigation {
+  display: none;
 }
 
 /**  SECTION-1  **/
