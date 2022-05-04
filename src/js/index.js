@@ -15,10 +15,8 @@ function toggleMenu() {
     const menuToggle = document.querySelector(".menu-toggle");
     const navigation = document.querySelector(".mobile-navigation");
     const logo = document.querySelector(".logo");
-    const menuButton = document.querySelector(".menu-button");
 
     menuToggle.classList.toggle("active");
     navigation.classList.toggle("active");
     logo.classList.toggle("active");
-    menuButton.classList.toggle("active");
 }
