@@ -124,12 +124,12 @@ header.sticky {
 
 header .logo {
   width: 7rem;
-  content: url("../assets/icons/kompi_logo.png");
+  content: url("../assets/icons/version_blanca_logo.svg");
   margin-left: 3.3rem;
 }
 
 header.sticky .logo {
-  content: url("../assets/icons/logo_versioncolor.png");
+  content: url("../assets/icons/version_primario_logo.svg");
 }
 
 header ul {
@@ -207,7 +207,7 @@ header .mobile-navigation.active li a:hover {
 
 .logo.active {
   position: relative;
-  content: url("../assets/icons/logo_versioncolor.png");
+  content: url("../assets/icons/version_primario_logo.svg");
   z-index: 10;
 }
 
@@ -758,7 +758,7 @@ header .mobile-navigation.active li a:hover {
 }
 
 .kompilogo {
-  width: 7rem;
+  width: 3rem;
   object-fit: contain;
   margin-right: 5rem;
 }
