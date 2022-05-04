@@ -15,7 +15,6 @@
     <!--Font-Family: Open Sans and Lato -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-    <!--WARNING: deberiamos poner todo el js en index.js o si acaso dividir en otro archivo solo las funciones e importarlas en el otro js-->
 
     <script type="module" src="./js/index.js"></script>
     <!--<script type="module" src="./js/imageblur.js"></script>-->
@@ -33,12 +32,12 @@
             <li><a href="#anchoranimals">Nuestros kompis</a> </li>
             <li><a href="#anchoradoptar">Testimonios</a></li>
         </ul>
-        <div class="menu-toggle" id="menuClick"></div>
+        <div class="menu-toggle menuClick"></div>
         <ul class="mobile-navigation">
-            <li><a href="#anchorservices" class="mobile-li">Servicios</a></li>
-            <li><a href="#anchoranimals" class="mobile-li">Nuestros kompis</a> </li>
-            <li><a href="#anchoradoptar" class="mobile-li">Testimonios</a></li>
-            <a href="./404file.html" class="menuButton"><span>Adopta</span></a>
+            <li><a href="#anchorservices" class="menuClick">Servicios</a></li>
+            <li><a href="#anchoranimals" class="menuClick">Nuestros kompis</a> </li>
+            <li><a href="#anchoradoptar" class="menuClick">Testimonios</a></li>
+            <a href="./404file.html" class="menu-button"><span>Adopta</span></a>
         </ul>
     </header>
     <section class="section-1">
@@ -235,20 +234,7 @@
         </div>
 
     </footer>
-
-    <!-- <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        function toggleMenu() {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navigation = document.querySelector(".navigation");
-            menuToggle.classList.toggle("active");
-            navigation.classList.toggle("active");
-        }
-    </script> -->
 </body>
+
 
 </html>
