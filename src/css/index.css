@@ -786,7 +786,7 @@ header .mobile-navigation.active li a:hover {
 
 /* ----------------- */
 
-@media (min-width: 0) and (max-width: 679px) {
+@media (min-width: 0) and (max-width: 767px) {
   header .navigation {
     display: none;
   }
@@ -823,11 +823,6 @@ header .mobile-navigation.active li a:hover {
     font-size: 2.1rem;
   }
 
-  .section-1 p {
-    font-size: 1.2rem;
-    margin: 1rem 2rem;
-  }
-
   h2 {
     font-size: 1.6rem;
   }
@@ -860,23 +855,21 @@ header .mobile-navigation.active li a:hover {
   width: 22rem;
 }
 
-@media (min-width: 680px) {
-  h1 {
-    font-size: 3rem;
+@media (min-width: 768px) {
+  header .logo {
+    margin-left: 2rem;
   }
 
-  header .logo {
-    margin-left: 3rem;
+  header .navigation {
+    display: none;
   }
 
   .menu-toggle {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
-}
 
-@media (min-width: 768px) {
-  header .navigation {
-    display: none;
+  .section-1 .seeker {
+    width: 42rem;
   }
 
   .grid-container {
@@ -903,6 +896,14 @@ header .mobile-navigation.active li a:hover {
 
 /* para pantallas largas */
 @media (min-width: 1200px) {
+  header .logo {
+    margin-left: 5rem;
+  }
+
+  .menu-toggle {
+    margin-right: 5rem;
+  }
+
   .services {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 5rem;
