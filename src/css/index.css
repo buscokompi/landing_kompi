@@ -524,12 +524,13 @@ a {
   border-radius: 0.5rem;
   opacity: 0.9;
   transition: opacity 0.5s;
+  align-items: center;
 }
 
 .pets-name {
   font-weight: 600;
   font-size: 1.2rem;
-  position: absolute;
+  margin-bottom: 1rem;
 }
 
 .grid-container:hover > .pet-name-container {
@@ -547,7 +548,12 @@ a {
 }
 
 .container-btn-section3 .button {
-  border: 0.15rem solid var(--black);
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.container-btn-section3 .button:hover {
+  background-color: #003c45;
 }
 
 /* <!-- -----------------------------FOOTER------------------------- --> */

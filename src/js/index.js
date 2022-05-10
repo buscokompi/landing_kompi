@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 
 // Burger menu for mobile
 
-const click = document.querySelectorAll(".burger-img");
+const click = document.querySelectorAll(".menuClick");
 click.forEach(element => {
     element.addEventListener("click", toggleMenu);
 });
