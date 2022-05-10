@@ -1,7 +1,7 @@
 // Header transparent to white when scroll
 window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
+    const topbar = document.querySelector(".topbar");
+    topbar.classList.toggle("sticky", window.scrollY > 0);
 });
 
 // Burger menu for mobile
@@ -12,11 +12,9 @@ click.forEach(element => {
 });
 
 function toggleMenu() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navigation = document.querySelector(".mobile-navigation");
-    const logo = document.querySelector(".logo");
+    const burger = document.querySelector(".burger");
+    const burgerImg = document.querySelector(".burger-img");
 
-    menuToggle.classList.toggle("active");
-    navigation.classList.toggle("active");
-    logo.classList.toggle("active");
+    burger.classList.toggle("active");
+    burgerImg.classList.toggle("active");
 }

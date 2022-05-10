@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap%27");
 
+:root {
+  --orange: #f9b225;
+  --yellow: #ffe194;
+  --black: #3f3d3b;
+  --white: white;
+  --grey: #c4c4c4;
+  --lightgrey: #f5f5f5;
+  --green: #015865;
+  --title-font: "Dosis";
+  --text-font: "Open Sans";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +21,7 @@
 }
 
 section {
-  background: linear-gradient(45deg, #f9b225, #ffe194);
+  background: linear-gradient(45deg, var(--orange), var(--yellow));
   height: 100vh;
 }
 
@@ -20,7 +32,7 @@ section {
   right: 10%;
   bottom: 10%;
   border-radius: 1rem;
-  background-color: #f9b225;
+  background-color: var(--orange);
   box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 20%);
   display: flex;
   justify-content: center;
@@ -44,11 +56,10 @@ h2 {
   text-align: center;
 }
 
-.img-pug{
+.img-pug {
   width: 50%;
   height: auto;
 }
-
 
 button {
   padding: 0.5rem 3rem;
@@ -56,8 +67,8 @@ button {
   font-weight: 600;
   text-decoration: none;
   font-size: 20px;
-  color: white;
-  background-color: #d11149;
+  color: var(--white);
+  background: var(--green);
   margin-top: 3rem;
   cursor: pointer;
   border: none;
@@ -67,11 +78,7 @@ a {
   text-decoration-line: none;
 }
 
-a:hover {
-  color: #d11149;
-}
-
 button:hover {
   transition: 0.4s;
-  background: white;
+  background: #003c45;
 }
