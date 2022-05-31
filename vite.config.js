@@ -1,6 +1,8 @@
-const path = require("path");
 const mode = process.env.NODE_ENV === "production" ? "production" : "development";
-const base = mode === "production" ? "/" + path.basename(process.cwd()) + "/" : "/";
+const base = "/";
+const { resolve } = require("path");
+
+console.log(resolve);
 
 module.exports = {
   root: "src",
@@ -9,6 +11,12 @@ module.exports = {
   publicDir: "../public",
   build: {
     outDir: "../dist",
-    assetsDir: "./"
+    assetsDir: "./",
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        nested: resolve(__dirname, "src/404file.html"),
+      }
+    }
   }
 };

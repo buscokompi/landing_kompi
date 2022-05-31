@@ -1,27 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-  iniciarApp();
+// Header transparent to white when scroll
+window.addEventListener("scroll", function() {
+  const topbar = document.querySelector(".topbar");
+  topbar.classList.toggle("sticky", window.scrollY > 0);
 });
 
-function iniciarApp() {
-  navegacionFija();
-}
+// Burger menu for mobile
 
-function navegacionFija() {
-  const header = document.querySelector(".section-0");
-  const section = document.querySelector(".section-1");
-  // const aux = document.querySelector(".section-1");
+const click = document.querySelectorAll(".menuClick");
+click.forEach(element => {
+  element.addEventListener("click", toggleMenu);
+});
 
-  window.addEventListener("scroll", function() {
-    if (section.getBoundingClientRect().top < 0) {
-      // header.classList.add("fixed");
-      // aux.classList.add("padding");
-      header.classList.add("topbar-lower");
-      header.classList.remove("topbar-upper");
-    } else {
-      header.classList.remove("fijo");
-      // aux.classList.remove("padding");
-      header.classList.remove("topbar-lower");
-      header.classList.add("topbar-upper");
-    }
-  });
+function toggleMenu() {
+  const burger = document.querySelector(".burger");
+  const burgerImg = document.querySelector(".burger-img");
+
+  burger.classList.toggle("active");
+  burgerImg.classList.toggle("active");
 }

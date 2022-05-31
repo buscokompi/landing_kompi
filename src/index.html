@@ -5,204 +5,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <meta name="description"
+        content="El portal de confianza para la adopción gratuita de animales en España. Busca el más próximo a ti y adopta fácilmente a tu nueva mascota.">
+    <title>Kompi | Buscador de animales</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6V6X52CLB8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6V6X52CLB8');
+</script>
+    <link rel="icon" href="./assets/icons/Icono_logo.svg">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Open+Sans:wght@300;400&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/titlekompi.js"></script>
+
 </head>
 
+
+
 <body>
-    <header class="header">
-
-        <div class="section-0">
-            <div class="topbar">
-                <a href="index.html">
-                    <img class="kompi-logo" src="./assets/icons/kompi_logo.png"  alt="Logo">
-                </a>
-                <nav class="navegation">
-                    <a href="#anchorservices">Servicios</a>
-                    <a href="#anchoranimals">Nuestros kompis</a>
-                    <a href="#anchoradoptar">Adopta</a>
-                </nav>
-            </div>
-        </div>
-
-        <section class="section-1">
-            <div class="container">
-                <h1>¿Buscas un <span
-                    class="txt-rotate"
-                    data-period="2000"
-                    data-rotate='[ "perro?", "gato?", "kompi?" ]'></span>
-               </h1>
-                <p>
-                    Adopta facilmente y sin complicaciones a tu proximo acompañante peludo.
-                </p>
-                <div class="link">
-                    <a class="button" href="./webprove.html"> <span>Adopta</span></a>
+    <header>
+        <nav class="topbar">
+            <a href="index.html"><img class="logo" src="./assets/icons/version_blanca_logo.svg" width="112" height="34"
+                    alt="Logo"></a>
+            <div class="burger-img menuClick"></div>
+            <div class="burger">
+                <div class="opacity"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#anchorservices" class="menuClick">Servicios</a></li>
+                        <li><a href="#anchoranimals" class="menuClick">Nuestros kompis</a></li>
+                        <li><a href="#anchoradoptar" class="menuClick">Testimonios</a></li>
+                    </ul>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/adoptaunkompi/"><img
+                                src="./assets/icons/icono_facebook_yellow.svg" width="27" height="27"
+                                alt="facebook"></a>
+                        <a href="https://www.instagram.com/adoptaunkompi"><img
+                                src="./assets/icons/icono_instagram_yellow.svg" width="27" height="27"
+                                alt="instagram"></a>
+                        <a href="https://twitter.com/adoptaunkompi"><img src="./assets/icons/icono_twitter_yellow.svg"
+                                width="27" height="27" alt="twitter"></a>
+                        <a href="./login.html"><img src="./assets/icons/corazon_icono.svg" width="27" height="27"
+                                alt="favoritos" class="heart"></a>
+                    </div>
+                    <div class="m-footer">
+                        <a href="https://www.app.adoptaunkompi.com/">Iniciar sesión</a>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <ul class="desktop">
+                <li><a href="#anchorservices">Servicios</a></li>
+                <li><a href="#anchoranimals">Nuestros kompis</a></li>
+                <li><a href="#anchoradoptar">Testimonios</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="section-2">
-        <div id="anchorservices"></div>
+
+    <!-- ----------------------------------HOME---------------------------------- -->
+    <main class="home">
+
+        <div class="seeker">
+            <img src="./assets/icons/lupa_icono.svg" alt="icono lupa buscador" width="40" height="40"
+                class=" seeker-img">
+            <h1>¿Buscas un <span class="txt-rotate" data-period="2000"
+                    data-rotate='[ "perro?&nbsp", "gato?&nbsp", "kompi?&nbsp" ]'></span>
+            </h1>
+        </div>
+        <p>Adopta gratis y fácilmente a tu próxima mascota</p>
+        <a class="button" href="https://www.app.adoptaunkompi.com/"><span>Adopta</span></a>
+
+    </main>
+
+    <section class="section-2" id="anchorservices">
         <div class="paw-print">
-            <img src="./assets/icons/huella.png">
+            <img src="./assets/icons/icono_logo.svg" alt="logo kompi" width="50" height="68">
+            <h2>La mejor forma de adoptar</h2>
+            <p>Conoce más de nuestros servicios</p>
         </div>
-
-        <div class="text-slogan">
-            <h2>La mejor forma de adoptar.</h2>
-            <h3>Conoce más de nuestros servicios</h3>
-        </div>
-
         <div class="services">
-
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_busca.svg"
-                     alt="vector_encuentra_en_kompi" sizes="">
+            <div class="services-card">
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_busca.svg" alt="imagen lupa de busqueda">
                 </div>
-                <h2>SERVICIOS</h2>
-                <p>Con Kompi es fácil encontrar al perro o gato que buscas.
-                Simplemente pulsa el botón “Adopta” e ingresa tu código
-                postal para comenzar la búsqueda.</p>
+                <div class="text-services">
+                    <h3>BUSCA</h3>
+                    <p>Con Kompi es fácil encontrar al perro o gato que buscas.
+                        Simplemente pulsa el botón “Adopta” e ingresa tu código
+                        postal para comenzar la búsqueda.</p>
+                </div>
             </div>
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_encuentra.svg"
-                     alt="vector_encuentra_en_kompi" sizes="">
+            <div class="services-card">
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_encuentra.svg"
+                        alt="imagen resultado de la busqueda">
                 </div>
-                <h2>VENTAJAS</h2>
-                <p>Una vez que encuentres a tu próxima mascota haz click
-                    en “Adóptame” para obtener información de contacto de
-                    su refugio, rescate u hogar actual.</p>
+                <div class="text-services">
+                    <h3>ENCUENTRA</h3>
+                    <p>Una vez que encuentres a tu próxima mascota haz click
+                        en “Adóptame” para obtener información de contacto de
+                        su refugio, rescate u hogar actual.</p>
+                </div>
             </div>
-            <div class="service">
-                <div class="img-service">
-                    <img class="img-section" src="./assets/icons/icono_adopta.svg" alt="vector_adopta_en_kompi" sizes="">
+            <div class="services-card">
+                <div class="services-image">
+                    <img class="img-section-2" src="./assets/icons/icono_adopta.svg"
+                        alt="imagen seguridad en un intercambio">
                 </div>
-                <h2>ADOPTA</h2>
-                <p>El centro de rescate, refugio u hogar actual lo guiará
-                    a través del proceso de adopción. Prepara tu
-                    hogar para facilitar al nuevo miembro la llegada
-                    a su nueva familia.</p>
+                <div class="text-services">
+                    <h3>ADOPTA</h3>
+                    <p>El centro de rescate, refugio u hogar actual le guiará a través del proceso
+                        de adopción.
+                        Prepara tu hogar para facilitar al nuevo miembro la llegada a su nueva familia.</p>
+                </div>
             </div>
         </div>
-
-        <div class="btnsection2">
-            <a class="button" href="./webprove.html"> <span>Adopta</span></a>
-        </div>
-
+        <a class="button" href="https://www.app.adoptaunkompi.com/"> <span>Adopta</span></a>
     </section>
 
     <section class="section-3" id="anchoranimals">
-        <div class="background">
-            <div class="texts">
-                <h1>Nuestros Kompis</h1>
-                <p>Nuestra familia está conformada por muchos Kompis.
-                    Busca a tu compañero fiel entre las +1000 posibles
-                    adopciones por toda España.</p>
+        <div class="section-3-container">
+            <div class="section-3-text">
+                <h2>Nuestros Kompis</h2>
+                <p>Nuestra familia está conformada por <strong>+1000 Kompis</strong> de diferentes especies.
+                    Comprometidos con ofrecer un servicio que facilite la <strong>adopción segura y
+                        gratuita</strong> de
+                    animales en España. Kompi registra y verifica previamente al animal y a su propietario actual.
+                    Mostrándote y filtrando resultados por intereses. Así como asesorándote en todo el proceso de
+                    adopción.</p>
             </div>
-
-            <div class="gridimg">
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgBracoWeimar.jpg">
+            <div class="grid">
+                <div class="grid-container img-braco-weimar">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Duna</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgRabbit.jpg">
+                <div class="grid-container img-rabbit">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Lolo</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgGreyCat.jpg">
+                <div class="grid-container img-grey-cat">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Nia</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgBorderCollie.jpg">
+                <div class="grid-container img-border-collie">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Nala</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgHusky.jpg">
+                <div class="grid-container img-husky">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Balto</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgWhiteCat.jpg">
+                <div class="grid-container img-white-cat">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Tai</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgPitbull.jpg">
+                <div class="grid-container img-pitbull">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Pisko</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgSleapingCat.jpg">
+                <div class="grid-container img-sleaping-cat">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Coco</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgHamster.jpg">
+                <div class="grid-container img-hamster">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Gus</p>
+                    </div>
                 </div>
-                <div class="containerimg" onmouseover="hoverimages(this)" onmouseout="hoverout(this)">
-                    <img src="./assets/images/imgYorkshire.jpg">
+                <div class="grid-container img-yorkshire">
+                    <div class="pet-name-container">
+                        <p class="pets-name">Chico</p>
+                    </div>
                 </div>
             </div>
-        <div id="anchoradoptar"></div>
+            <div class="container-btn-section3">
+                <a class="button" href="https://www.app.adoptaunkompi.com/"> <span>Adopta</span></a>
+            </div>
         </div>
     </section>
 
-    <section class="section-4" >
-        <img class="unionsection3" src="./assets/icons/huella_seccion3.svg">
-
-        <div class="text-reviews">
-            <h2>Si ganas tú, ganamos todos</h2>
-        </div>
-
-        <figure class="icon-cards mt-3">
-            <div class="icon-cards-content">
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
-                        alt="vector_encuentra_en_kompi" sizes=""></div>
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_encuentra.svg"
-                        alt="vector_encuentra_en_kompi" sizes=""></div>
-                <div class="icon-cards-item"><img class="busca-img" src="assets/icons/icono_adopta.svg"
-                        alt="vector_adopta_en_kompi" sizes=""></div>
-            </div>
-        </figure>
-        <div class="btnsection4">
-            <a class="button" href="./webprove.html"> <span>Adopta</span></a>
-        </div>
-    </section>
 
     <footer class="footer">
 
         <div class="information">
-            <div class="about-us">
-                <h5>SOBRE NOSOTROS</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime, veniam
-                    tenetur molestiae vero aut officia laudantium quia hic doloribus minus soluta pariatur adipisci quo
-                    consequuntur minima fugiat temporibus quidem!dolor sit amet consectetur adipisicing elit. Rem
-                    maxime, veniam
-                    tenetur molestiae vero aut officia laudantium quia hic doloribus minus soluta pariatur adipisci quo
-                    consequuntur minima fugiat temporibus qui</p>
+
+            <div class="column two">
+                <a href="./index.html"><img class="logo" src="./assets/icons/version_blanca_logo.svg" width="74"
+                        height="22" alt="Kompi logo"></a>
+                <a href="mailto:buscokompi@gmail.com" class="mail">buscokompi@gmail.com</a>
+                <div class="social">
+                    <a href="https://www.facebook.com/adoptaunkompi/"><img src="./assets/icons/icono_facebook.svg"
+                            width="21" height="21" alt="facebook"></a>
+                    <a href="https://www.instagram.com/adoptaunkompi"><img src="./assets/icons/icono_instagram.svg"
+                            width="21" height="21" alt="instagram"></a>
+                    <a href="https://twitter.com/adoptaunkompi"><img src="./assets/icons/icono_twitter.svg" width="21"
+                            height="21" alt="twitter"></a>
+                </div>
             </div>
 
-            <div class="space"></div>
+            <div class="column">
+                <p>Información</p>
+                <a href="./404file.html">Sobre nosotros</a>
+                <a href="./404file.html">Busca una mascota</a>
+                <a href="./404file.html">Contáctanos</a>
+            </div>
 
-            <div class="social-media">
-                <a href="https://twitter.com/BuscoKompi">
-                    <img class="rrss" src="./assets/icons/facebook.svg">
-                </a>
-
-                <a href="https://www.facebook.com/profile.php?id=100079663393852">
-                    <img class="rrss" src="./assets/icons/facebook.svg">
-                </a>
-
-                <a href="https://www.instagram.com/buscokompi/?hl=es">
-                    <img class="rrss" src="./assets/icons/facebook.svg">
-                </a>
+            <div class="column three">
+                <p>Acerca de...</p>
+                <a href="./404file.html">Política de privacidad</a>
+                <a href="./404file.html">Términos y condiciones</a>
+                <a href="./404file.html">Preguntas frecuentes</a>
             </div>
         </div>
 
         <div class="copyright">
-            <hr>
-            <p>© 2022. Todos los Derechos Reservados. Desarrollado por Karmic Koala</p>
+            <hr class=" horizontal-line">
+            <p>© 2022. Todos los Derechos Reservados. <br>Desarrollado por Karmic Koala</p>
         </div>
+
     </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="./js/imageblur.js"></script>
-    <script src="./js/titlekompi.js"></script>
-
 </body>
+
 
 </html>
