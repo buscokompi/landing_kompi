@@ -257,7 +257,7 @@ a {
       rgb(0 0 0 / 20%),
       rgb(0 0 0 / 20%)
     ),
-    url("../assets/images/fondo_landing.svg");
+    url("../assets/images/fondo_landing.jpg");
   background-size: cover;
   background-position: center center;
   display: grid;
@@ -458,43 +458,43 @@ a {
 
 /* IMAGENES DE LA GALERIA DE ANIMALES */
 .img-braco-weimar {
-  background-image: url("../assets/images/galleryAnimals/imgBracoWeimar.svg");
+  background-image: url("../assets/images/galleryAnimals/imgBracoWeimar.jpg");
 }
 
 .img-rabbit {
-  background-image: url("../assets/images/galleryAnimals/imgRabbit.svg");
+  background-image: url("../assets/images/galleryAnimals/imgRabbit.jpg");
 }
 
 .img-grey-cat {
-  background-image: url("../assets/images/galleryAnimals/imgGreyCat.svg");
+  background-image: url("../assets/images/galleryAnimals/imgGreyCat.jpg");
 }
 
 .img-border-collie {
-  background-image: url("../assets/images/galleryAnimals/imgBorderCollie.svg");
+  background-image: url("../assets/images/galleryAnimals/imgBorderCollie.jpg");
 }
 
 .img-husky {
-  background-image: url("../assets/images/galleryAnimals/imgHusky.svg");
+  background-image: url("../assets/images/galleryAnimals/imgHusky.jpg");
 }
 
 .img-white-cat {
-  background-image: url("../assets/images/galleryAnimals/imgWhiteCat.svg");
+  background-image: url("../assets/images/galleryAnimals/imgWhiteCat.jpg");
 }
 
 .img-pitbull {
-  background-image: url("../assets/images/galleryAnimals/imgPitbull.svg");
+  background-image: url("../assets/images/galleryAnimals/Pisko2.jpeg");
 }
 
 .img-sleaping-cat {
-  background-image: url("../assets/images/galleryAnimals/imgSleapingCat.svg");
+  background-image: url("../assets/images/galleryAnimals/imgSleapingCat.jpg");
 }
 
 .img-hamster {
-  background-image: url("../assets/images/galleryAnimals/imgHamster.svg");
+  background-image: url("../assets/images/galleryAnimals/imgHamster.jpg");
 }
 
 .img-yorkshire {
-  background-image: url("../assets/images/galleryAnimals/imgYorkshire.svg");
+  background-image: url("../assets/images/galleryAnimals/imgYorkshire.jpg");
 }
 
 /* ____________________________ */
@@ -548,10 +548,9 @@ a {
   background-color: #003c45;
 }
 
-/* <!-- -----------------------------FOOTER------------------------- --> */
 footer {
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   background: var(--black);
 }
 
@@ -597,37 +596,139 @@ footer .information .column {
 
 footer .information .column .mail {
   text-decoration: underline;
+  width: 9rem;
 }
 
 footer .information .column img {
   height: 1.4rem;
-  margin-top: -1rem;
+  margin-top: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+footer .information .column .social a {
+  margin: 0;
 }
 
 footer .information .column .social img {
-  filter: invert(50%) sepia(1%) saturate(43%) hue-rotate(270deg) brightness(109%) contrast(101%);
+  filter: invert(50%) sepia(1%) saturate(43%) hue-rotate(270deg) brightness(200%) contrast(101%);
   width: 1.3rem;
   height: 1.3rem;
-  margin: 1rem 0.3rem 0;
 }
 
 footer .information .column a {
-  margin: 0.6rem 0 0;
+  margin: 1.5rem 0 0;
 }
 
 footer .copyright {
-  width: 100%;
-  height: 15%;
+  width: 80%;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 footer .copyright .horizontal-line {
-  width: 70%;
-  margin-top: -1rem;
+  width: 100%;
 }
 
 footer .copyright p {
-  margin: 1rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1000px) {
+  br {
+    display: none;
+  }
+
+  footer {
+    height: 51vh;
+  }
+
+  footer p,
+  footer a {
+    font-size: 0.9rem;
+  }
+
+  footer .information {
+    height: 80%;
+    flex-direction: row;
+  }
+
+  footer .information .two {
+    order: 1;
+  }
+
+  footer .information .column img {
+    margin: 0;
+  }
+
+  footer .information .column {
+    height: 40%;
+    width: 12rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  footer .information .three {
+    margin-right: 15%;
+  }
+
+  footer .information .two a {
+    margin: 0;
+  }
+
+  footer .information .column a {
+    margin-top: 1.2rem;
+  }
+
+  .social {
+    margin-top: 1.5rem;
+  }
+
+  footer .copyright {
+    margin-top: 0;
+  }
+
+  footer .copyright p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  footer .information {
+    justify-content: flex-start;
+    margin: 0 10vw;
+  }
+
+  footer .information .column {
+    width: 13rem;
+  }
+
+  footer .information .two a {
+    margin: 0 0 0.6rem;
+  }
+
+  footer .information .three {
+    margin-right: 25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  footer .information .three {
+    margin-right: 45%;
+  }
 }
 
 /* <!-- -----------------------------MEDIAQUERY------------------------ --> */
@@ -682,6 +783,7 @@ footer .copyright p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /*
   footer {
     height: 40vh;
   }
@@ -712,7 +814,7 @@ footer .copyright p {
     text-align: left;
     line-height: 1.5rem;
     width: 12rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 1170px) {
@@ -732,7 +834,7 @@ footer .copyright p {
     font-size: 1.4rem;
   }
 
-  footer .information {
+  /* footer .information {
     gap: 3vw;
     justify-content: flex-start;
     margin: 0 15vw;
@@ -745,7 +847,7 @@ footer .copyright p {
   footer .information .two {
     position: absolute;
     right: 15vw;
-  }
+  } */
 }
 
 @media screen and (min-width: 1300px) {
@@ -820,11 +922,12 @@ footer .copyright p {
     margin: 0 8rem;
   }
 
+  /*
   footer .information {
     margin: 0 19vw;
   }
 
   footer .information .two {
     right: 19vw;
-  }
+  } */
 }
