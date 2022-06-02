@@ -560,6 +560,41 @@ a {
   background-color: #003c45;
 }
 
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url("../assets/images/Web_kompi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-4-text h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.section-4-text p {
+  width: 65vw;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.invisible-box {
+  background-color: none;
+  width: 10rem;
+  height: 2rem;
+}
+
 footer {
   width: 100%;
   height: fit-content;
@@ -718,9 +753,13 @@ footer .copyright p {
     right: 5rem;
   }
 
+  .invisible-box {
+    height: 2rem;
+  }
+
   .section-3-text p {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .grid {
@@ -790,13 +829,31 @@ footer .copyright p {
   }
 }
 
+.section-4-text p {
+  width: 50vw;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.section-3-text p {
+  width: 50vw;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.invisible-box {
+  background-color: none;
+  width: 10rem;
+  height: 2rem;
+}
+
 @media screen and (min-width: 1170px) {
   h1 {
     font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   p {
@@ -829,6 +886,10 @@ footer .copyright p {
   h1 {
     font-size: 4rem;
     margin-left: 1.7rem;
+  }
+
+  .section-3-text h2 {
+    font-size: 2rem;
   }
 
   .topbar .logo {
@@ -879,17 +940,44 @@ footer .copyright p {
   }
 
   .section-3-text {
-    justify-items: flex-start;
     justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
-    gap: 4rem;
     margin-left: 8rem;
-    padding-top: 20rem;
+    padding-top: 15rem;
+  }
+
+  .section-3-text h2 {
+    width: 40rem;
+    margin-left: 2rem;
   }
 
   .section-3-text p {
     width: 40rem;
     margin-left: 1.4rem;
+  }
+
+  .section-4 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .section-4-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 4rem;
+  }
+
+  .section-4-text p {
+    width: 40rem;
+    margin-left: 1.2rem;
+  }
+
+  .container-btn-section4 {
+    margin-left: 1rem;
   }
 
   .grid {
@@ -899,5 +987,9 @@ footer .copyright p {
 
   footer .information .three {
     margin-right: 45%;
+  }
+
+  .invisible-box {
+    height: 6rem;
   }
 }
