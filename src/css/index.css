@@ -17,13 +17,11 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
   display: inline-block;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -130,7 +128,7 @@ a {
   background-position: center;
   cursor: pointer;
   position: absolute;
-  right: 1.5rem;
+  right: 2.5rem;
 }
 
 .topbar.sticky .burger-img {
@@ -143,7 +141,7 @@ a {
   background-size: 1.3rem;
   background-repeat: no-repeat;
   background-position: center;
-  transition: 1s linear;
+  transition: 0.5s ease-in;
   z-index: 4;
   position: absolute;
   top: 1.5rem;
@@ -200,7 +198,7 @@ a {
 }
 
 .topbar .burger.active .menu ul a {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -210,13 +208,12 @@ a {
 
 .topbar .burger.active .menu .icons {
   display: grid;
-  width: 8rem;
-  grid-auto-columns: repeat(4, 1fr);
+  width: 10rem;
   grid-auto-flow: column;
-  justify-items: center;
+  justify-items: start;
   transition: color 0.5s;
   position: absolute;
-  top: 24rem;
+  bottom: 12.5rem;
   left: 2.4rem;
 }
 
@@ -234,13 +231,18 @@ a {
 
 .topbar .burger.active .menu .m-footer {
   width: 100%;
-  height: 9%;
+  height: 15%;
   position: absolute;
   bottom: 0;
   background: var(--orange);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topbar .burger.active .menu .m-footer a {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .topbar .desktop {
@@ -324,14 +326,13 @@ a {
 
 .section-2 .paw-print img {
   line-height: 1rem;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+  margin: 6rem 0 2rem;
   text-align: center;
   width: 3.15rem;
 }
 
 .section-2 .services {
-  width: 79rem;
+  max-width: 95vw;
   margin-top: 2rem;
   display: grid;
   display: contents;
@@ -341,9 +342,8 @@ a {
 }
 
 .section-2 .services .services-card {
-  width: 13rem;
+  width: 10rem;
   height: 22rem;
-  margin: 2rem;
   padding: 3rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -381,11 +381,10 @@ a {
 
 .section-2 .services .services-card .text-services p {
   color: var(--black);
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.25rem;
   text-align: center;
   font-weight: 400;
-  width: 14rem;
 }
 
 .section-2 .button {
@@ -421,7 +420,7 @@ a {
   justify-items: center;
   text-align: center;
   padding-top: 35rem;
-  line-height: 1.3rem;
+  line-height: 1.8rem;
   gap: 2rem;
 }
 
@@ -429,6 +428,7 @@ a {
   width: 65vw;
   font-size: 0.9rem;
   margin-bottom: 5rem;
+  line-height: 1.3rem;
 }
 
 .grid {
@@ -444,7 +444,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 16rem;
+  width: 15rem;
   height: 16rem;
   margin: 1rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 20%);
@@ -644,6 +644,78 @@ footer .copyright p {
   font-size: 0.8rem;
 }
 
+/* <!-- -----------------------------MEDIAQUERY------------------------ --> */
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .home .seeker {
+    grid-template-columns: 3fr;
+  }
+
+  .seeker-img {
+    display: none;
+  }
+
+  .home p {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .button {
+    padding: 0.9rem 3rem;
+  }
+
+  .home .seeker-img {
+    padding-left: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.3rem;
+  }
+
+  .topbar .logo {
+    left: 4rem;
+  }
+
+  .section-2 .paw-print p {
+    margin: 1rem 0 4rem;
+    font-size: 1.4rem;
+  }
+
+  .topbar .burger-img {
+    right: 5rem;
+  }
+
+  .section-3-text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 1000px) {
   br {
     display: none;
@@ -707,117 +779,6 @@ footer .copyright p {
 }
 
 @media screen and (min-width: 1170px) {
-  footer .information {
-    justify-content: flex-start;
-    margin: 0 10vw;
-  }
-
-  footer .information .column {
-    width: 13rem;
-  }
-
-  footer .information .two a {
-    margin: 0 0 0.6rem;
-  }
-
-  footer .information .three {
-    margin-right: 25%;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  footer .information .three {
-    margin-right: 45%;
-  }
-}
-
-/* <!-- -----------------------------MEDIAQUERY------------------------ --> */
-@media screen and (min-width: 767px) {
-  h1 {
-    font-size: 3.1rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  br {
-    display: none;
-  }
-
-  .button {
-    padding: 0.9rem 3rem;
-  }
-
-  .home .seeker-img {
-    padding-left: 2.5rem;
-  }
-
-  .home p {
-    font-size: 1.3rem;
-  }
-
-  .topbar .logo {
-    left: 4rem;
-  }
-
-  .section-2 .paw-print p {
-    margin: 1rem 0 4rem;
-    font-size: 1.4rem;
-  }
-
-  .topbar .burger-img {
-    right: 5rem;
-  }
-
-  .section-3-text p {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /*
-  footer {
-    height: 40vh;
-  }
-
-  footer .column p {
-    margin-bottom: 1rem;
-  }
-
-  footer p {
-    font-size: 1rem;
-  }
-
-  footer a {
-    font-size: 1rem;
-  }
-
-  footer .information {
-    flex-direction: row;
-    gap: 6rem;
-  }
-
-  footer .information .two {
-    order: 1;
-    margin-top: -1rem;
-  }
-
-  footer .information .column {
-    text-align: left;
-    line-height: 1.5rem;
-    width: 12rem;
-  } */
-}
-
-@media screen and (min-width: 1170px) {
   h1 {
     font-size: 3.5rem;
   }
@@ -834,20 +795,22 @@ footer .copyright p {
     font-size: 1.4rem;
   }
 
-  /* footer .information {
-    gap: 3vw;
+  footer .information {
     justify-content: flex-start;
-    margin: 0 15vw;
+    margin: 0 10vw;
   }
 
   footer .information .column {
     width: 13rem;
   }
 
-  footer .information .two {
-    position: absolute;
-    right: 15vw;
-  } */
+  footer .information .two a {
+    margin: 0 0 0.6rem;
+  }
+
+  footer .information .three {
+    margin-right: 25%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -922,12 +885,7 @@ footer .copyright p {
     margin: 0 8rem;
   }
 
-  /*
-  footer .information {
-    margin: 0 19vw;
+  footer .information .three {
+    margin-right: 45%;
   }
-
-  footer .information .two {
-    right: 19vw;
-  } */
 }
