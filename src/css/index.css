@@ -132,12 +132,11 @@ a {
 }
 
 .topbar.sticky .burger-img {
-  filter: brightness(0) invert(0);
+  filter: initial;
 }
 
 .topbar .burger-img.active {
   background: url("../assets/icons/menu-exit.svg");
-  filter: brightness(0) invert(0);
   background-size: 1.3rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -145,6 +144,7 @@ a {
   z-index: 4;
   position: absolute;
   top: 1.5rem;
+  filter: initial;
 }
 
 .topbar .burger {
@@ -192,7 +192,7 @@ a {
   flex-direction: column;
   position: absolute;
   top: 7rem;
-  left: 3rem;
+  left: 2.4rem;
   gap: 1.5rem;
   padding: 0;
 }
@@ -214,7 +214,7 @@ a {
   transition: color 0.5s;
   position: absolute;
   bottom: 12.5rem;
-  left: 2.4rem;
+  left: 2.5rem;
 }
 
 .topbar .burger.active .menu .icons img {
@@ -224,7 +224,7 @@ a {
 }
 
 .topbar .burger.active .menu .icons img:hover {
-  filter: invert(95%) sepia(98%) saturate(6680%) hue-rotate(325deg) brightness(92%) contrast(112%);
+  filter: brightness(0) saturate(100%) invert(19%) sepia(9%) saturate(7096%) hue-rotate(149deg) brightness(91%) contrast(105%);
   border: 0.1rem solid var(--orange);
   border-radius: 20%;
 }
@@ -237,12 +237,24 @@ a {
   background: var(--orange);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 
 .topbar .burger.active .menu .m-footer a {
   font-weight: 700;
   font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar .burger.active .m-footer:hover,
+.topbar .burger.active .m-footer a:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.5s;
 }
 
 .topbar .desktop {
