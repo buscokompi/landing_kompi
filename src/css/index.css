@@ -354,16 +354,18 @@ a {
 }
 
 .section-2 .services .services-card {
-  width: 10rem;
+  width: 11rem;
   height: 22rem;
-  padding: 3rem;
+  padding: 2rem 3rem;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.8fr;
   justify-content: space-around;
   justify-items: center;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 15%);
   border-radius: 1.25rem;
   transition: transform 0.5s;
+  margin-top: 3rem;
 }
 
 .section-2 .services .services-card:hover {
@@ -749,6 +751,10 @@ footer .copyright p {
     font-size: 1.4rem;
   }
 
+  .section-2 .services .services-card {
+    width: 13.5rem;
+  }
+
   .topbar .burger-img {
     right: 5rem;
   }
@@ -937,6 +943,11 @@ footer .copyright p {
 
   .section-2 .services {
     display: flex;
+    gap: 4rem;
+  }
+
+  .section-2 .services .services-card {
+    margin-top: 0;
   }
 
   .section-3-text {
@@ -981,8 +992,16 @@ footer .copyright p {
   }
 
   .grid {
-    grid-template-columns: repeat(5, 1fr);
-    margin: 0 8rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .prelast {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .last {
+    grid-area: 3 / 3 / 4 / 4;
   }
 
   footer .information .three {
@@ -991,5 +1010,17 @@ footer .copyright p {
 
   .invisible-box {
     height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .prelast,
+  .last {
+    grid-area: auto;
   }
 }
