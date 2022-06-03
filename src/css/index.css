@@ -432,7 +432,7 @@ a {
   display: grid;
   justify-content: center;
   justify-items: center;
-  text-align: center;
+  text-align: left;
   padding-top: 35rem;
   line-height: 1.8rem;
   gap: 2rem;
@@ -567,34 +567,43 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  height: 100vh;
-  background-image: url("../assets/images/Web_kompi.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-align: left;
+  min-height: 100vh;
 }
 
 .section-4-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.section-4-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.section-4-text img {
+  display: none;
+}
+
+.container-btn-section4 {
+  margin-bottom: 5rem;
 }
 
 .section-4-text h2 {
   font-size: 2rem;
   margin-top: 3rem;
+  width: 70%;
 }
 
 .section-4-text p {
-  width: 65vw;
   font-size: 0.9rem;
   margin-top: 2rem;
-}
-
-.invisible-box {
-  background-color: none;
-  width: 10rem;
-  height: 2rem;
+  width: 70%;
 }
 
 footer {
@@ -759,10 +768,6 @@ footer .copyright p {
     right: 5rem;
   }
 
-  .invisible-box {
-    height: 2rem;
-  }
-
   .section-3-text p {
     font-size: 1rem;
     line-height: 1.6;
@@ -770,6 +775,20 @@ footer .copyright p {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-4-text {
+    margin: 3rem 0 5rem;
+    gap: 2rem;
+  }
+
+  .section-4 {
+    min-height: 95vh;
+  }
+
+  .section-4-text img {
+    display: block;
+    min-width: 70vw;
   }
 }
 
@@ -833,24 +852,6 @@ footer .copyright p {
   footer .copyright p {
     font-size: 0.9rem;
   }
-}
-
-.section-4-text p {
-  width: 50vw;
-  font-size: 1rem;
-  margin-top: 2rem;
-}
-
-.section-3-text p {
-  width: 50vw;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-.invisible-box {
-  background-color: none;
-  width: 10rem;
-  height: 2rem;
 }
 
 @media screen and (min-width: 1170px) {
@@ -968,29 +969,6 @@ footer .copyright p {
     margin-left: 1.4rem;
   }
 
-  .section-4 {
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .section-4-container {
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    margin-left: 10rem;
-    margin-top: 4rem;
-  }
-
-  .section-4-text p {
-    width: 40rem;
-    margin-left: 1.2rem;
-  }
-
-  .container-btn-section4 {
-    margin-left: 1rem;
-  }
-
   .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1004,12 +982,42 @@ footer .copyright p {
     grid-area: 3 / 3 / 4 / 4;
   }
 
-  footer .information .three {
-    margin-right: 45%;
+  .section-4 {
+    min-height: 120vh;
+    background:
+      linear-gradient(
+        0deg,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%)
+      ),
+      url("../assets/images/Web_kompi.jpg");
+    background-size: cover;
+    background-position: center center;
+    align-items: flex-end;
   }
 
-  .invisible-box {
-    height: 6rem;
+  .section-4-text {
+    gap: 1rem;
+    margin: 5rem 10vw 2rem 0;
+  }
+
+  .section-4-text p {
+    margin-top: 0;
+    line-height: 1.4rem;
+    max-width: 20rem;
+  }
+
+  .section-4-text img {
+    display: none;
+  }
+
+  .container-btn-section4 {
+    align-self: flex-start;
+    margin-left: 4rem;
+  }
+
+  footer .information .three {
+    margin-right: 45%;
   }
 }
 
